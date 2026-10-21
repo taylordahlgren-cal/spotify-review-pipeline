@@ -1,0 +1,40 @@
+rank,issue_id,area,issue_name,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,share_of_ranked_records_pct,needs_review_count
+1,other.general,other,General dissatisfaction and vague complaints,39942,1588,78701,1.970382,78701,53.6,4039
+2,billing.free_tier_restrictions_paywall,billing_support,Free tier limits and paywalled features,6975,1636,18916,2.711971,18916,9.4,1253
+3,usability.ads_interruptions,usability,Excessive ads interrupting listening,8075,437,16481,2.040991,16481,10.8,732
+4,usability.shuffle_queue_controls,usability,Shuffle forced and limited playback controls,2435,367,6674,2.740862,6674,3.3,364
+5,playback.stops_or_pauses,playback,Music stops or pauses unexpectedly,1837,210,5618,3.058247,5618,2.5,239
+6,playback.crashes_or_wont_open,playback,App crashes or fails to open,1439,99,4794,3.331480,4794,1.9,242
+7,access.login_failure,access,Unable to log in to account,1116,77,4333,3.882616,4333,1.5,148
+8,usability.ui_redesign_navigation,usability,Confusing interface after redesign,1659,269,3770,2.272453,3770,2.2,172
+9,catalog.missing_or_removed_content,catalog,Songs unavailable or only previews play,1035,96,2501,2.416425,2501,1.4,259
+10,playback.other,playback,Wrong songs and glitchy playback,852,58,2368,2.779343,2368,1.1,343
+11,playback.connectivity_bluetooth_cast,playback,Device connection failures with Connect and Alexa,770,87,2304,2.992208,2304,1.0,137
+12,usability.playlist_library_management,usability,Playlist editing and library problems,746,52,1881,2.521448,1881,1.0,110
+13,billing.price_increase_cost,billing_support,Subscription price seen as too high,833,112,1689,2.027611,1689,1.1,257
+14,usability.other,usability,Missing features like sleep timer and seekbar,706,85,1686,2.388102,1686,0.9,226
+15,catalog.lyrics,catalog,Lyrics not displaying,691,26,1680,2.431259,1680,0.9,78
+16,catalog.recommendations_algorithm,catalog,Repetitive or unwanted song recommendations,752,74,1680,2.234043,1680,1.0,136
+17,playback.lag_slow_loading,playback,Laggy and slow song loading,551,37,1496,2.715064,1496,0.7,74
+18,downloads.offline_mode_fails,downloads,Offline mode fails to play downloads,336,30,1056,3.142857,1056,0.5,42
+19,billing.premium_not_recognized,billing_support,Premium status not recognized after purchase,334,24,1049,3.140719,1049,0.4,121
+20,downloads.downloads_disappear,downloads,Downloaded music disappears or won't play,315,28,1027,3.260317,1027,0.4,48
+21,catalog.search,catalog,Search results unhelpful or inaccurate,368,18,986,2.679348,986,0.5,93
+22,downloads.cannot_download,downloads,Unable to download music,320,8,938,2.931250,938,0.4,88
+23,playback.audio_quality_volume,playback,Poor audio quality or no sound,323,25,748,2.315789,748,0.4,51
+24,billing.unexpected_charges_refunds,billing_support,Unexpected or duplicate charges,181,37,736,4.066298,736,0.2,72
+25,access.logged_out,access,Unexpectedly logged out of account,203,11,733,3.610837,733,0.3,26
+26,access.account_hacked_or_lost,access,Account hacked or access lost,154,37,627,4.071429,627,0.2,67
+27,billing.plan_management_family_student,billing_support,Plan changes and premium application issues,227,78,568,2.502203,568,0.3,77
+28,other.unrelated_or_unclear,other,Boycotts and unrelated off-topic comments,337,148,486,1.442136,486,0.5,296
+29,access.other,access,Blocked access due to VPN or region,152,17,477,3.138158,477,0.2,83
+30,catalog.podcasts_audiobooks,catalog,Podcasts and audiobooks missing or broken,131,7,328,2.503817,328,0.2,24
+31,playback.battery_storage_resources,playback,"Excess battery, storage, and memory use",127,14,307,2.417323,307,0.2,22
+32,usability.widgets_lockscreen_car,usability,Broken widgets and Android Auto controls,118,9,293,2.483051,293,0.2,10
+33,catalog.other,catalog,"Catalog quality, language, and playlist complaints",127,12,282,2.220472,282,0.2,59
+34,support.no_response_or_unhelpful,billing_support,Unresponsive or unhelpful customer support,113,18,268,2.371681,268,0.2,18
+35,downloads.other,downloads,Sync and local file problems,103,7,255,2.475728,255,0.1,39
+36,access.signup_or_verification,access,Sign-up and phone verification failing,60,1,215,3.583333,215,0.1,9
+37,billing.other,billing_support,Other billing and subscription complaints,93,19,208,2.236559,208,0.1,57
+38,access.password_reset,access,Password reset emails not working,26,0,86,3.307692,86,0.0,6
+39,support.other,billing_support,Miscellaneous support and service complaints,17,0,33,1.941176,33,0.0,15

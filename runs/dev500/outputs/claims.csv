@@ -1,0 +1,5 @@
+claim_id,issue_id,metric,value
+C04,other.general,priority_score,113
+C05,billing.free_tier_restrictions_paywall,complaint_count,41
+C08,billing.free_tier_restrictions_paywall,priority_score,109
+C12,usability.ads_interruptions,priority_score,61

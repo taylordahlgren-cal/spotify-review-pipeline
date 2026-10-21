@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-10-21T02:41:09+00:00",
+  "rate_multiplier": 2.0,
+  "rates_file": "/sessions/rcw-014hkwghdxml6henwjvjyyv2/mnt/Documents/spotify-review-pipeline/cost/rates.csv",
+  "per_run": {
+    "cold": {
+      "stages": {
+        "enrich": {
+          "attempts": 3,
+          "succeeded": 3,
+          "failed": 0,
+          "synthetic_failures": 0,
+          "retry_attempts": 1,
+          "fallback_calls": 0,
+          "reviews_sent": 101,
+          "uncached_input_tokens": 5224,
+          "cache_write_tokens": 0,
+          "cache_read_tokens": 10701,
+          "output_tokens": 8910,
+          "cost_usd": 0.01016882,
+          "summed_call_seconds": 28.888
+        },
+        "verify": {
+          "attempts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "synthetic_failures": 0,
+          "retry_attempts": 0,
+          "fallback_calls": 0,
+          "reviews_sent": 20,
+          "uncached_input_tokens": 1061,
+          "cache_write_tokens": 1150,
+          "cache_read_tokens": 0,
+          "output_tokens": 957,
+          "cost_usd": 0.0014567,
+          "summed_call_seconds": 3.254
+        },
+        "group": {
+          "attempts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "synthetic_failures": 0,
+          "retry_attempts": 0,
+          "fallback_calls": 0,
+          "reviews_sent": 0,
+          "uncached_input_tokens": 3393,
+          "cache_write_tokens": 715,
+          "cache_read_tokens": 0,
+          "output_tokens": 1550,
+          "cost_usd": 0.00240735,
+          "summed_call_seconds": 6.017
+        },
+        "memo": {
+          "attempts": 3,
+          "succeeded": 1,
+          "failed": 2,
+          "synthetic_failures": 0,
+          "retry_attempts": 2,
+          "fallback_calls": 0,
+          "reviews_sent": 0,
+          "uncached_input_tokens": 5056,
+          "cache_write_tokens": 1526,
+          "cache_read_tokens": 0,
+          "output_tokens": 1604,
+          "cost_usd": 0.059934,
+          "summed_call_seconds": 11.937
+        }
+      },
+      "api_usd": 0.07396686999999999,
+      "wall_s": 51.751,
+      "local_usd": 0.0002875055555555555
+    },
+    "warm": {
+      "stages": {},
+      "api_usd": 0,
+      "wall_s": 0.04,
+      "local_usd": 2.2222222222222224e-07
+    }
+  },
+  "enrich_unit": {
+    "enrich_attempts": 3,
+    "first_pass_requests": 2,
+    "texts_first_pass": 100,
+    "texts_retried": 1,
+    "failed_attempts": 0,
+    "retry_or_split_requests": 1,
+    "fallback_requests": 0,
+    "cost_usd": 0.01016882,
+    "cost_per_text": 0.0001016882,
+    "tokens_per_text": {
+      "uncached_input_tokens": 52.24,
+      "cache_write_tokens": 0.0,
+      "cache_read_tokens": 107.01,
+      "output_tokens": 89.1
+    },
+    "summed_call_seconds": 28.888,
+    "call_seconds_per_text": 0.28888
+  },
+  "unit_assumptions": {
+    "retry_rate_measured": 0.01,
+    "failed_attempt_rate": 0.0,
+    "fallback_cost_per_text_estimate": 0.012984,
+    "fallback_prompt_tokens_estimate": 2646,
+    "fallback_rate_measured": 0.0,
+    "verify_cost_per_text": 7.2835e-05,
+    "fixed_overhead_usd": 0.062341350000000004,
+    "seconds_per_text_1_worker": 0.28903
+  },
+  "projections": [
+    {
+      "scenario": "Full corpus, no exact-text reuse",
+      "texts_to_classify": 660609,
+      "rows_accounted": 660622,
+      "base": {
+        "retry_rate": 0.01,
+        "fallback_fraction": 0.0,
+        "enrich_usd": 67.18,
+        "verify_reviews": 2000,
+        "verify_usd": 0.15,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 67.38,
+        "local_compute_usd_estimate": 0.1568,
+        "elapsed_hours": 7.84,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1411.6,
+        "over_budget": true
+      },
+      "conservative": {
+        "retry_rate": 0.05,
+        "fallback_fraction": 0.005,
+        "enrich_usd": 128.05,
+        "verify_reviews": 2000,
+        "verify_usd": 0.15,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 128.27,
+        "local_compute_usd_estimate": 0.163,
+        "elapsed_hours": 8.15,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1357.3,
+        "over_budget": true
+      }
+    },
+    {
+      "scenario": "Full corpus, exact-text reuse",
+      "texts_to_classify": 484189,
+      "rows_accounted": 660622,
+      "base": {
+        "retry_rate": 0.01,
+        "fallback_fraction": 0.0,
+        "enrich_usd": 49.24,
+        "verify_reviews": 2000,
+        "verify_usd": 0.15,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 49.44,
+        "local_compute_usd_estimate": 0.115,
+        "elapsed_hours": 5.75,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1411.6,
+        "over_budget": true
+      },
+      "conservative": {
+        "retry_rate": 0.05,
+        "fallback_fraction": 0.005,
+        "enrich_usd": 93.86,
+        "verify_reviews": 2000,
+        "verify_usd": 0.15,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 94.07,
+        "local_compute_usd_estimate": 0.1196,
+        "elapsed_hours": 5.98,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1357.3,
+        "over_budget": true
+      }
+    },
+    {
+      "scenario": "Declared scope sample:100000 (reuse)",
+      "texts_to_classify": 78099,
+      "rows_accounted": 660622,
+      "base": {
+        "retry_rate": 0.01,
+        "fallback_fraction": 0.0,
+        "enrich_usd": 7.94,
+        "verify_reviews": 1562,
+        "verify_usd": 0.11,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 8.12,
+        "local_compute_usd_estimate": 0.0189,
+        "elapsed_hours": 0.95,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1411.6,
+        "over_budget": false
+      },
+      "conservative": {
+        "retry_rate": 0.05,
+        "fallback_fraction": 0.005,
+        "enrich_usd": 15.14,
+        "verify_reviews": 2000,
+        "verify_usd": 0.15,
+        "fixed_group_memo_usd": 0.0623,
+        "api_total_usd": 15.35,
+        "local_compute_usd_estimate": 0.0198,
+        "elapsed_hours": 0.99,
+        "binding_limit": "workers",
+        "throughput_texts_per_min": 1357.3,
+        "over_budget": false
+      }
+    }
+  ],
+  "refreshes": {},
+  "assumptions": {
+    "currency": "USD",
+    "rates_tier_used": "standard (synchronous Messages API, prompts <= 100k tokens); Batch API NOT used",
+    "budget_usd": 25.0,
+    "output_token_cap_per_enrich_request": 8000,
+    "max_workers": 8,
+    "requests_per_minute_limit": 50,
+    "fallback_max_fraction": 0.005,
+    "verify_fraction": 0.02,
+    "verify_max": 2000,
+    "parallel_efficiency": 0.85,
+    "local_compute_usd_per_hour": 0.02,
+    "local_compute_note": "Laptop running the orchestrator (electricity/wear, rough assumption). Hosting for the dashboard is a separate fixed cost (free tiers used) and is not part of API spend.",
+    "conservative": {
+      "retry_rate_multiplier": 3.0,
+      "min_retry_rate": 0.05,
+      "fallback_fraction": 0.005,
+      "output_token_inflation": 1.25,
+      "verify_at_max": true
+    },
+    "scenarios": [
+      {
+        "name": "Full corpus, no exact-text reuse",
+        "texts_to_classify": 660609,
+        "rows": 660622
+      },
+      {
+        "name": "Full corpus, exact-text reuse",
+        "texts_to_classify": 484189,
+        "rows": 660622
+      },
+      {
+        "name": "Declared scope sample:100000 (reuse)",
+        "texts_to_classify": 78099,
+        "rows": 660622
+      }
+    ],
+    "fixed_overhead_note": "Group + memo calls happen once per run regardless of volume (not multiplied by reviews)."
+  }
+}

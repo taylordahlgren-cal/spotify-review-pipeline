@@ -1,0 +1,163 @@
+{
+  "check": {
+    "attempts": 1,
+    "cited_ids": [
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C18",
+      "C22",
+      "C26",
+      "C27",
+      "K01",
+      "K02",
+      "K03",
+      "K05",
+      "K06",
+      "T05",
+      "T09",
+      "T14",
+      "T15",
+      "T21",
+      "T24",
+      "T27",
+      "T36",
+      "T39"
+    ],
+    "problems": [],
+    "status": "pass"
+  },
+  "memo": {
+    "alternatives": [
+      {
+        "area": "usability",
+        "assessment": "Largest area by severity_sum at 30785 [T09], driven by ads at 16481 [C10] and shuffle/queue controls at 6674 [C14]. Many complaints overlap with free-tier restrictions, so scope with billing.",
+        "claim_ids": [
+          "T09",
+          "C10",
+          "C14"
+        ]
+      },
+      {
+        "area": "playback",
+        "assessment": "Smaller volume (severity_sum 17635 [T21]) but highest severity, with 17.7% [T24] rated 4+. Stops/pauses score 5618 [C18] and crashes 4794 [C22].",
+        "claim_ids": [
+          "T21",
+          "T24",
+          "C18",
+          "C22"
+        ]
+      },
+      {
+        "area": "access",
+        "assessment": "Login failure scores 4333 [C26] with mean severity 3.882616 [C27]. 77.1% [T36] of access records are 4+. Volume is small, so it suits a targeted fix.",
+        "claim_ids": [
+          "C26",
+          "C27",
+          "T36"
+        ]
+      },
+      {
+        "area": "catalog",
+        "assessment": "Lower priority at 7457 [T27].",
+        "claim_ids": [
+          "T27"
+        ]
+      },
+      {
+        "area": "downloads",
+        "assessment": "Lowest priority at 3276 [T39].",
+        "claim_ids": [
+          "T39"
+        ]
+      }
+    ],
+    "dashboard_recommendations": [
+      {
+        "claim_ids": [
+          "C08"
+        ],
+        "detail": "Show the issue's priority score alongside its cancellation-intent mentions, 1636 [C-none].",
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall"
+        ],
+        "title": "Track free-tier restriction complaints"
+      },
+      {
+        "claim_ids": [
+          "C08",
+          "C12"
+        ],
+        "detail": "Show the two issues together because the complaints overlap in theme.",
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall",
+          "usability.ads_interruptions"
+        ],
+        "title": "Pair ads and free-tier views"
+      },
+      {
+        "claim_ids": [
+          "C22",
+          "C26"
+        ],
+        "detail": "Flag playback crashes and login failures, which are high severity but lower volume.",
+        "issue_ids": [
+          "playback.crashes_or_wont_open",
+          "access.login_failure"
+        ],
+        "title": "Add a severity-4+ watchlist"
+      }
+    ],
+    "limitations": [
+      "Self-selected app-store reviews; not representative of all users.",
+      "Coverage: 236894 [K02] of 660622 [K01] records were completed. 423728 [K03] were quarantined, mostly outside the declared classification scope (422667 [K06]).",
+      "Exact-text reuse labels 159552 [K05] records, so duplicates share one label.",
+      "Cancellation language is expressed intent, not observed churn. No revenue or causal estimates are made.",
+      "The 'other' bucket holds 54.0% [T05] of ranked records and is not a product area."
+    ],
+    "recommendation": "Under the baseline rule (priority_score = complaint_count x mean_severity), the generic \"other\" bucket ranks first at 78701 [C04] but is not a product area. Among specific areas, the top issue is free tier limits and paywalled features, with a priority score of 18916 [C08] from 6975 complaints [C05]. I recommend billing/support, with usability (ads, 16481 [C12]) as the close alternative. This is self-selected historical review evidence and expresses intent, not churn.",
+    "recommended_area": "billing_support",
+    "supporting_evidence": [
+      {
+        "claim_ids": [
+          "C06",
+          "T14",
+          "T15"
+        ],
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall"
+        ],
+        "point": "Billing_support has the highest area severity_sum among specific areas after usability's 30785 [T09]; it is 23467 [T15], with the highest cancellation count of any area at 1924 [T14]. Its leading issue (free-tier restrictions) is the top specific issue at 18916 [C06].",
+        "review_ids": [
+          "86151d66-9d56-43ea-8514-4a33c1646656",
+          "67788933-9b7d-4e82-a7df-cb5b1a95dabd"
+        ]
+      },
+      {
+        "claim_ids": [
+          "C07",
+          "C11"
+        ],
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall",
+          "usability.ads_interruptions"
+        ],
+        "point": "Mean severity for the free-tier issue is 2.711971 [C07], above ads at 2.040991 [C11].",
+        "review_ids": [
+          "86151d66-9d56-43ea-8514-4a33c1646656"
+        ]
+      }
+    ],
+    "title": "Next-quarter focus: billing/support (free-tier limits) leads on baseline priority"
+  },
+  "meta": {
+    "generated_at": "2026-10-21T01:37:33.287+00:00",
+    "model": "claude-sonnet-5-5"
+  }
+}

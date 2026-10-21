@@ -1,0 +1,223 @@
+{
+  "calls_by_role": {
+    "enrich": {
+      "attempts": 15,
+      "cache_read_tokens": 49938,
+      "cache_write_tokens": 3567,
+      "cost_usd": 0.026791,
+      "failed": 0,
+      "input_tokens": 79057,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "output_tokens": 46582,
+      "succeeded": 15,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 25552,
+      "unknown_cost_attempts": 0
+    },
+    "group": {
+      "attempts": 1,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 715,
+      "cost_usd": 0.002173,
+      "failed": 0,
+      "input_tokens": 8348,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "output_tokens": 2641,
+      "succeeded": 1,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 7633,
+      "unknown_cost_attempts": 0
+    },
+    "memo": {
+      "attempts": 3,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1526,
+      "cost_usd": 0.030323,
+      "failed": 2,
+      "input_tokens": 7020,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "output_tokens": 1552,
+      "succeeded": 1,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 5494,
+      "unknown_cost_attempts": 0
+    },
+    "verify": {
+      "attempts": 1,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1150,
+      "cost_usd": 0.000738,
+      "failed": 0,
+      "input_tokens": 2335,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "output_tokens": 952,
+      "succeeded": 1,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 1185,
+      "unknown_cost_attempts": 0
+    }
+  },
+  "config": {
+    "enrich": "claude-haiku-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "enrich_fallback": "claude-sonnet-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "group": "claude-haiku-5-5:effort=low:thinking=disabled+group-v1+schema-v1",
+    "memo": "claude-sonnet-5-5:effort=low:thinking=disabled+memo-v1+schema-v1",
+    "provider": "anthropic",
+    "verify": "claude-haiku-5-5:effort=low:thinking=disabled+verify-v1+schema-v1"
+  },
+  "cost_basis": "cost_usd = usage tokens x cost/rates.csv (standard tier). Unknown-outcome attempts are listed, not priced.",
+  "generated_at": "2026-10-21T00:34:46.417+00:00",
+  "ingest": {
+    "distinct_nonempty_texts": 479,
+    "duplicate_review_ids": [],
+    "first_review": "2022-05-19 14:22:29",
+    "ingested_at": "2026-10-21T00:33:30+00:00",
+    "input_bytes": 76170,
+    "input_path": "checkpoint_500.csv",
+    "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+    "last_review": "2023-11-15 15:44:48",
+    "nonempty_rows": 500,
+    "profile": {
+      "duplicate_review_ids": 0,
+      "empty_review_text": 0,
+      "invalid_rating": 0,
+      "missing_app_version": 108,
+      "missing_timestamp": 0,
+      "multiline_text": 0,
+      "non_ascii_text": 71,
+      "records": 500
+    },
+    "quarantine_plan": {
+      "empty_review_text": 0
+    },
+    "reviews_by_month": {
+      "2022-05": 14,
+      "2022-06": 19,
+      "2022-07": 21,
+      "2022-08": 31,
+      "2022-09": 22,
+      "2022-10": 18,
+      "2022-11": 18,
+      "2022-12": 21,
+      "2023-01": 17,
+      "2023-02": 23,
+      "2023-03": 20,
+      "2023-04": 21,
+      "2023-05": 22,
+      "2023-06": 19,
+      "2023-07": 56,
+      "2023-08": 26,
+      "2023-09": 25,
+      "2023-10": 79,
+      "2023-11": 28
+    },
+    "reviews_by_rating": {
+      "1": 187,
+      "2": 33,
+      "3": 19,
+      "4": 45,
+      "5": 216
+    },
+    "rows": 500,
+    "rows_with_duplicated_text": 32,
+    "scope": "all",
+    "scope_detail": {
+      "declared": "all",
+      "in_scope_distinct_texts": 479,
+      "in_scope_rows": 500,
+      "method": "sample:N = first N nonempty rows ordered by SHA-256(seed:review_id) as in manifest.json",
+      "rows_completable_by_exact_text_reuse": 500,
+      "rows_outside_scope_without_matching_text": 0
+    },
+    "text_length_chars": {
+      "max": 499,
+      "median": 36,
+      "min": 1,
+      "p90": 197,
+      "p99": 468
+    },
+    "wall_s": 0.01
+  },
+  "pending_texts": 0,
+  "run_id": "run-f85524a25e",
+  "sessions": [
+    {
+      "command": "ingest enrich verify materialize group rank memo",
+      "completed_ids_end": 500,
+      "completed_ids_start": 0,
+      "ended_at": "2026-10-21T00:34:46.415+00:00",
+      "ledger": "{\"cap_usd\": 2.0, \"spent_usd\": 0.060026, \"reserved_usd\": 0.0, \"unreconciled_usd\": 0.0}",
+      "n": 1,
+      "phase": "initial",
+      "run_id": "run-f85524a25e",
+      "session_id": "s01-6775b4aa",
+      "started_at": "2026-10-21T00:33:30.784+00:00",
+      "stop_reason": "finished",
+      "wall_s": 75.631
+    }
+  ],
+  "stage_times": [
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "ingest",
+      "started_at": "2026-10-21T00:33:30.785+00:00",
+      "wall_s": 0.012
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "enrich",
+      "started_at": "2026-10-21T00:33:31.544+00:00",
+      "wall_s": 47.674
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "verify",
+      "started_at": "2026-10-21T00:34:19.217+00:00",
+      "wall_s": 3.165
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "materialize",
+      "started_at": "2026-10-21T00:34:22.382+00:00",
+      "wall_s": 0.025
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "group",
+      "started_at": "2026-10-21T00:34:22.408+00:00",
+      "wall_s": 10.914
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "rank",
+      "started_at": "2026-10-21T00:34:33.323+00:00",
+      "wall_s": 0.018
+    },
+    {
+      "detail": "{\"session\": \"s01-6775b4aa\"}",
+      "run_id": "run-f85524a25e",
+      "stage": "memo",
+      "started_at": "2026-10-21T00:34:33.341+00:00",
+      "wall_s": 13.07
+    }
+  ],
+  "text_results": {
+    "completed": 479
+  },
+  "texts_with_transport_failures": 0,
+  "total_cost_usd_from_usage": 0.060025
+}

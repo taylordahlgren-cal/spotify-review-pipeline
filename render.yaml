@@ -1,0 +1,15 @@
+# Render Blueprint: one free web service running the FastAPI backend, which also serves the dashboard page.
+# The database is external Postgres (e.g. Neon free tier); set DATABASE_URL in the Render dashboard.
+services:
+  - type: web
+    name: spotify-review-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r dashboard/requirements.txt
+    startCommand: uvicorn dashboard.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.12.7

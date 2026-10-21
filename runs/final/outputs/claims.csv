@@ -1,0 +1,9 @@
+claim_id,issue_id,metric,value
+C04,other.general,priority_score,78701
+C05,billing.free_tier_restrictions_paywall,complaint_count,6975
+C08,billing.free_tier_restrictions_paywall,priority_score,18916
+C12,usability.ads_interruptions,priority_score,16481
+C16,usability.shuffle_queue_controls,priority_score,6674
+C20,playback.stops_or_pauses,priority_score,5618
+C24,playback.crashes_or_wont_open,priority_score,4794
+C28,access.login_failure,priority_score,4333

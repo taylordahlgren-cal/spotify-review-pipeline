@@ -1,0 +1,86 @@
+{
+  "distinct_nonempty_texts": 484189,
+  "duplicate_review_ids": [],
+  "empty_text_review_ids": [
+    "5d085a1f-1737-45a6-a3fb-5211b327ec27",
+    "be032618-08ae-4dde-b0b2-d2ddcd8ea5a6",
+    "f7c94991-0fc2-49a5-b47e-510e97a1632c",
+    "f5b40f1f-6621-456f-b1f2-0b3a9361c793",
+    "7121867d-b162-4b15-a45f-6352dcff92c1",
+    "f0df3892-1cfd-44f6-b3bb-a2eef7e69f6e",
+    "a3b536ac-b508-4e02-8550-ff7ea0bf79c2",
+    "b9587209-7961-4fd2-903c-fcd0fa924721",
+    "1687e070-9c26-4657-9ecc-0141405bcd4b",
+    "34bf6347-1625-46cd-b6fa-82913e2f665d",
+    "e4a05a09-be34-40a3-9b4a-e3976dea1b82",
+    "1bbad718-5df1-4669-841d-d1d6a040945a",
+    "7c26b1a0-8e0b-426d-976c-15b526f94e30"
+  ],
+  "first_review": "2022-05-17 00:01:07",
+  "ingested_at": "2026-10-21T00:36:26+00:00",
+  "input_bytes": 97400616,
+  "input_path": "spotify_reviews_18months.csv",
+  "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "last_review": "2023-11-15 23:16:10",
+  "nonempty_rows": 660609,
+  "profile": {
+    "duplicate_review_ids": 0,
+    "empty_review_text": 13,
+    "invalid_rating": 0,
+    "missing_app_version": 159701,
+    "missing_timestamp": 0,
+    "multiline_text": 68,
+    "non_ascii_text": 106648,
+    "records": 660622
+  },
+  "quarantine_plan": {
+    "empty_review_text": 13
+  },
+  "reviews_by_month": {
+    "2022-05": 15461,
+    "2022-06": 30338,
+    "2022-07": 32784,
+    "2022-08": 30732,
+    "2022-09": 26933,
+    "2022-10": 27572,
+    "2022-11": 27349,
+    "2022-12": 31744,
+    "2023-01": 28609,
+    "2023-02": 20889,
+    "2023-03": 27238,
+    "2023-04": 25014,
+    "2023-05": 28062,
+    "2023-06": 27117,
+    "2023-07": 85079,
+    "2023-08": 30438,
+    "2023-09": 41634,
+    "2023-10": 89104,
+    "2023-11": 34525
+  },
+  "reviews_by_rating": {
+    "1": 242620,
+    "2": 31034,
+    "3": 33268,
+    "4": 54140,
+    "5": 299560
+  },
+  "rows": 660622,
+  "rows_with_duplicated_text": 192342,
+  "scope": "sample:100000",
+  "scope_detail": {
+    "declared": "sample:100000",
+    "in_scope_distinct_texts": 78099,
+    "in_scope_rows": 100000,
+    "method": "sample:N = first N nonempty rows ordered by SHA-256(seed:review_id) as in manifest.json",
+    "rows_completable_by_exact_text_reuse": 237942,
+    "rows_outside_scope_without_matching_text": 422667
+  },
+  "text_length_chars": {
+    "max": 1693,
+    "median": 32,
+    "min": 1,
+    "p90": 207,
+    "p99": 490
+  },
+  "wall_s": 28.4
+}

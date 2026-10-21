@@ -1,0 +1,6 @@
+{
+  "completed": 500,
+  "completed_by_exact_text_reuse": 21,
+  "completed_by_model_call": 479,
+  "total_records": 500
+}

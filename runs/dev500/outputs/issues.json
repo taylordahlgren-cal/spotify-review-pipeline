@@ -1,0 +1,834 @@
+{
+  "generated_at": "2026-10-21T00:34:33.319+00:00",
+  "issues": [
+    {
+      "area": "access",
+      "description": "Customers report their account was hacked and their saved playlists could not be recovered despite paying.",
+      "evidence_sample": [
+        {
+          "quote": "hacked ,can't even recover the playlists set by me last week ,cost over three hundred dollars,per week for nothing",
+          "review_id": "d87536c5-6fe0-4b38-b0b1-c47936e4a0d8"
+        }
+      ],
+      "issue_id": "access.account_hacked_or_lost",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Account hacked and playlists lost",
+      "named_by": "model",
+      "subtopic": "account_hacked_or_lost",
+      "topic": "access"
+    },
+    {
+      "area": "access",
+      "description": "Users are logged out automatically and then cannot log back in, including premium accounts.",
+      "evidence_sample": [
+        {
+          "quote": "out of nowhere log me out, and now I'm not able to log in",
+          "review_id": "0a7f2420-1b49-41fa-8cfc-0b2e178bea6b"
+        },
+        {
+          "quote": "my premium account got logged out automatically which was linked with my phone number",
+          "review_id": "f6f9c680-0970-443f-b422-b1a6ad85e7ce"
+        }
+      ],
+      "issue_id": "access.logged_out",
+      "member_count": 2,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Unexpectedly logged out of account",
+      "named_by": "model",
+      "subtopic": "logged_out",
+      "topic": "access"
+    },
+    {
+      "area": "access",
+      "description": "Customers cannot log in: passwords rejected, repeated contact-number prompts, or a false no-internet error on the login screen.",
+      "evidence_sample": [
+        {
+          "quote": "Login problems faced many times. Every time demanding new contact number. Worst experience.",
+          "review_id": "84acb6b0-dd91-4330-944f-2686cbd15ce0"
+        },
+        {
+          "quote": "It not letting me into my account and there are to many ads",
+          "review_id": "32fb340f-4f9f-4551-8dae-755221e58d6a"
+        },
+        {
+          "quote": "now I am not even able to log in into my application even after trying for several time",
+          "review_id": "9ce5f16c-aef0-48eb-ace1-91905796bc3d"
+        },
+        {
+          "quote": "Will not except my password",
+          "review_id": "de0a9cdf-8974-48bc-802f-331228df4619"
+        },
+        {
+          "quote": "I can't login to the app, it keep saying that there's no internet connection",
+          "review_id": "12efd15d-4d4f-4a71-8e71-69d03b6f983a"
+        },
+        {
+          "quote": "Can no longer listen to music off line or even log in.",
+          "review_id": "1f13c3a2-e57b-460c-b569-964e6b2b1f31"
+        }
+      ],
+      "issue_id": "access.login_failure",
+      "member_count": 6,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Unable to log into account",
+      "named_by": "model",
+      "subtopic": "login_failure",
+      "topic": "access"
+    },
+    {
+      "area": "billing_support",
+      "description": "Free users find skips capped at 6 per hour, features like lyrics and song choice locked behind premium, and feel pushed toward a trial.",
+      "evidence_sample": [
+        {
+          "quote": "it forced me to have a free trial of premium is the most insulting part",
+          "review_id": "4966b59e-cf09-4881-b3ea-34fd4118a553"
+        },
+        {
+          "quote": "you only get 6 skips a day, you can't pick the song you want from your playlist",
+          "review_id": "11ad400f-4487-4dfa-a9da-c8d624f4f107"
+        },
+        {
+          "quote": "the new update has made everthing premium and so usless",
+          "review_id": "21915fcd-9a35-48ba-b277-6296c4154603"
+        },
+        {
+          "quote": "why do I only have 6 skips per hour",
+          "review_id": "6ba8fc67-700c-4d33-ad84-ef67a05b2ae1"
+        },
+        {
+          "quote": "the app said get premium for the lyrics",
+          "review_id": "c374ef2d-3676-4c5e-a0d2-02242a254f22"
+        },
+        {
+          "quote": "I miss premium and over all its good. It's not I HATE it",
+          "review_id": "f782a3f3-b0c8-475c-a34c-cda0fefa272e"
+        }
+      ],
+      "issue_id": "billing.free_tier_restrictions_paywall",
+      "member_count": 41,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Free tier limits and premium paywall",
+      "named_by": "model",
+      "subtopic": "free_tier_restrictions_paywall",
+      "topic": "billing"
+    },
+    {
+      "area": "billing_support",
+      "description": "A customer reports being unable to sign up for an individual premium plan.",
+      "evidence_sample": [
+        {
+          "quote": "I cant sign up for individual premium",
+          "review_id": "1d1480fb-0142-46da-8570-45bf3983bf6d"
+        }
+      ],
+      "issue_id": "billing.plan_management_family_student",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Cannot sign up for individual premium",
+      "named_by": "model",
+      "subtopic": "plan_management_family_student",
+      "topic": "billing"
+    },
+    {
+      "area": "billing_support",
+      "description": "Customers who paid for premium still see a subscription pause screen or cannot complete purchase, and features stay locked.",
+      "evidence_sample": [
+        {
+          "quote": "It's need to skip any song without premium pack, and when I wanna purchase subscription it's show me a blank page",
+          "review_id": "398566f7-2519-40e6-a2f4-6676657a18a7"
+        },
+        {
+          "quote": "I cant't buy premium correctly. it show that my internet is poor.",
+          "review_id": "57aca404-d58b-4bb4-97b1-c64db92f054a"
+        },
+        {
+          "quote": "I paid my subscription and im still getting a pause subscription screen and can't access my music",
+          "review_id": "16929558-ce1e-4b87-8738-a1de3f557f66"
+        }
+      ],
+      "issue_id": "billing.premium_not_recognized",
+      "member_count": 3,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Paid premium not recognized in app",
+      "named_by": "model",
+      "subtopic": "premium_not_recognized",
+      "topic": "billing"
+    },
+    {
+      "area": "billing_support",
+      "description": "A customer feels they are being charged repeatedly to listen to or replay music.",
+      "evidence_sample": [
+        {
+          "quote": "they are so much charges to listen music or replay again the music",
+          "review_id": "58511d69-67c2-4432-84d8-f3c556592f2b"
+        }
+      ],
+      "issue_id": "billing.price_increase_cost",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member; sample is a general charging complaint.",
+      "name": "Charges for playing music",
+      "named_by": "model",
+      "subtopic": "price_increase_cost",
+      "topic": "billing"
+    },
+    {
+      "area": "catalog",
+      "description": "Song lyrics often do not load or appear inconsistently across songs in playlists.",
+      "evidence_sample": [
+        {
+          "quote": "Some of the song lyrics couldn't load",
+          "review_id": "d218ffde-42f9-48f8-a793-832507454b35"
+        },
+        {
+          "quote": "in some songs there is no lyrics and in some songs there is lyrics it's so confusing",
+          "review_id": "47becad0-8ae5-4a10-9731-fde8f2091862"
+        },
+        {
+          "quote": "sometime the lyrics don't show",
+          "review_id": "e0127547-4edd-44a0-8d5e-e8398bc07086"
+        },
+        {
+          "quote": "why can't the lyrics of song on my playlist load?",
+          "review_id": "9f7a013a-082e-4ec1-8a65-a1e0a0395d20"
+        }
+      ],
+      "issue_id": "catalog.lyrics",
+      "member_count": 4,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Lyrics fail to load or display",
+      "named_by": "model",
+      "subtopic": "lyrics",
+      "topic": "catalog"
+    },
+    {
+      "area": "catalog",
+      "description": "Customers say songs, artists' collaborations, Wrapped content, or clips have been removed or are missing from the app.",
+      "evidence_sample": [
+        {
+          "quote": "I can't open my spotify wrap 2022...",
+          "review_id": "c1726764-f0ce-4abc-ad9e-6cd143e1b2c7"
+        },
+        {
+          "quote": "removing Collab streams from only BTS and their members",
+          "review_id": "9f3626e0-1bcb-4788-a412-f812102502d1"
+        },
+        {
+          "quote": "but gospel music isn't much",
+          "review_id": "a1a28752-3256-4f81-b888-3e943343529f"
+        },
+        {
+          "quote": "Look up your favorite music and just a 30 second clip?",
+          "review_id": "4d327494-7846-481a-bf00-f4b5abc099c4"
+        },
+        {
+          "quote": "otherwise this app is worst it have adds every sec",
+          "review_id": "10775595-01b9-4623-9163-51619e2a0fa9"
+        },
+        {
+          "quote": "I want Spotify to get back all the songs which have been removee from the app",
+          "review_id": "4b3ace8e-b199-40b3-8ad4-5c0580e38203"
+        }
+      ],
+      "issue_id": "catalog.missing_or_removed_content",
+      "member_count": 8,
+      "model_coherence_check": false,
+      "model_note": "Quote 4d327494 (30-second clip) and 10775595 (ads every second) look like different problems; a1a28752 (gospel music) is vague.",
+      "name": "Songs and features removed or missing",
+      "named_by": "model",
+      "subtopic": "missing_or_removed_content",
+      "topic": "catalog"
+    },
+    {
+      "area": "catalog",
+      "description": "A user came to the app to find a specific podcast but reports no clear outcome.",
+      "evidence_sample": [
+        {
+          "quote": "I ended up on Spotify because I wanted to listen to a specific podcast",
+          "review_id": "b9a3e661-0eac-4cc9-a30e-7b1e11ef1315"
+        }
+      ],
+      "issue_id": "catalog.podcasts_audiobooks",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member; unclear complaint.",
+      "name": "Cannot find specific podcast",
+      "named_by": "model",
+      "subtopic": "podcasts_audiobooks",
+      "topic": "catalog"
+    },
+    {
+      "area": "catalog",
+      "description": "Customers dislike recommended or randomly played songs, including inappropriate ones, that ignore their playlist and settings.",
+      "evidence_sample": [
+        {
+          "quote": "it always recommends songs on my playlist even when I turn that setting off",
+          "review_id": "ed8efdfe-43e3-4baa-bbed-317807663531"
+        },
+        {
+          "quote": "Bad for smaller artists and a platform for idiots like Joe Rogan and Steven Crowder",
+          "review_id": "d27e9b26-a7af-469c-9a4e-8deea2db72ae"
+        },
+        {
+          "quote": "Stop giving me trashy songs I don't need or want to listen to",
+          "review_id": "7c5d9a4d-1bb1-4da3-bc3b-2500ae0246f1"
+        },
+        {
+          "quote": "it play the most inappropriate song",
+          "review_id": "145ea602-b8fb-41c1-bfdd-79293a18681f"
+        },
+        {
+          "quote": "it plays any song of the Playlist randomly",
+          "review_id": "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25"
+        },
+        {
+          "quote": "Please stop with the recommendations!",
+          "review_id": "618d1dbb-0186-4537-923a-7b4dabf19afb"
+        }
+      ],
+      "issue_id": "catalog.recommendations_algorithm",
+      "member_count": 6,
+      "model_coherence_check": false,
+      "model_note": "d27e9b26 (criticism of podcast hosts/platform content) is a content-opinion complaint, not a recommendation problem.",
+      "name": "Unwanted song recommendations and shuffle",
+      "named_by": "model",
+      "subtopic": "recommendations_algorithm",
+      "topic": "catalog"
+    },
+    {
+      "area": "catalog",
+      "description": "Tapping a liked song opens an unrelated song or a demo instead of the intended track.",
+      "evidence_sample": [
+        {
+          "quote": "if I click a a song a have liked it goes to didn't song I never heard or it might play a demo of the song",
+          "review_id": "0853c56b-0fa1-4d12-9cb9-6817d52233f5"
+        }
+      ],
+      "issue_id": "catalog.search",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "Liked songs open wrong tracks",
+      "named_by": "model",
+      "subtopic": "search",
+      "topic": "catalog"
+    },
+    {
+      "area": "downloads",
+      "description": "A customer reports downloads are not possible.",
+      "evidence_sample": [
+        {
+          "quote": "No download",
+          "review_id": "394b1e3e-205a-48a7-a9ca-64170fa5f6a0"
+        }
+      ],
+      "issue_id": "downloads.cannot_download",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "Unable to download music",
+      "named_by": "model",
+      "subtopic": "cannot_download",
+      "topic": "downloads"
+    },
+    {
+      "area": "downloads",
+      "description": "Downloaded songs are deleted, sometimes after a storage move fails, leaving users with nothing despite paying.",
+      "evidence_sample": [
+        {
+          "quote": "moving storage failed and deleted everything",
+          "review_id": "b03d6dc9-449a-4647-b112-559186656759"
+        },
+        {
+          "quote": "it's ALL GONE. What's the point in paying for the Premium service??",
+          "review_id": "5be3399d-dcd2-405b-a931-29b02ffc966e"
+        }
+      ],
+      "issue_id": "downloads.downloads_disappear",
+      "member_count": 2,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Downloaded music disappears or deleted",
+      "named_by": "model",
+      "subtopic": "downloads_disappear",
+      "topic": "downloads"
+    },
+    {
+      "area": "downloads",
+      "description": "Offline playback does not work for a customer.",
+      "evidence_sample": [
+        {
+          "quote": "Offline not workjng",
+          "review_id": "dcff57c6-abd6-413b-b255-aec3dc34fcbd"
+        }
+      ],
+      "issue_id": "downloads.offline_mode_fails",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "Offline mode not working",
+      "named_by": "model",
+      "subtopic": "offline_mode_fails",
+      "topic": "downloads"
+    },
+    {
+      "area": "downloads",
+      "description": "Song downloads get stuck in the background until the app is opened.",
+      "evidence_sample": [
+        {
+          "quote": "always stuck downloading songs in the background and gets stuck until I open Spotify",
+          "review_id": "2ffdf599-a0d5-4c01-bf26-025215d44c06"
+        }
+      ],
+      "issue_id": "downloads.other",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "Downloads stuck in background",
+      "named_by": "model",
+      "subtopic": "other",
+      "topic": "downloads"
+    },
+    {
+      "area": "other",
+      "description": "Vague negative feedback that the app or recent update is bad, useless, or hated, without a specific problem.",
+      "evidence_sample": [
+        {
+          "quote": "The update made the app useless",
+          "review_id": "45c561b9-cc47-4d80-95d3-f0d20bc84af3"
+        },
+        {
+          "quote": "Worst app.",
+          "review_id": "178c3b49-b689-4fe4-92a2-2257a58e6d95"
+        },
+        {
+          "quote": "Recent update bad and needs rework",
+          "review_id": "0d9c62d1-2b53-4887-8156-a28eeac86e82"
+        },
+        {
+          "quote": "I am Musalman I hate your app😡😡",
+          "review_id": "9666e9fe-0bc2-4e4c-8842-2162be0b6610"
+        },
+        {
+          "quote": "Hate this application so much",
+          "review_id": "42644f9d-f2b5-4399-8d32-68626340f1ce"
+        },
+        {
+          "quote": "It's not even a basic music player anymore",
+          "review_id": "68107809-52c1-469d-a78a-569280e49ed6"
+        }
+      ],
+      "issue_id": "other.general",
+      "member_count": 58,
+      "model_coherence_check": false,
+      "model_note": "Mostly vague; 9666e9fe and 486d1d7a are off-topic political or religious complaints.",
+      "name": "General dissatisfaction with app",
+      "named_by": "model",
+      "subtopic": "general",
+      "topic": "other"
+    },
+    {
+      "area": "other",
+      "description": "A user says they will boycott the app over a political event unrelated to the product.",
+      "evidence_sample": [
+        {
+          "quote": "i am uninstalling this app they burn quran and i will bycot this app as it is launched by swedan",
+          "review_id": "486d1d7a-d6f6-41ea-81ad-ed875452729c"
+        }
+      ],
+      "issue_id": "other.unrelated_or_unclear",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member; not a product issue.",
+      "name": "Uninstalling over unrelated controversy",
+      "named_by": "model",
+      "subtopic": "unrelated_or_unclear",
+      "topic": "other"
+    },
+    {
+      "area": "playback",
+      "description": "Music volume or audio adjustment setting does not work properly.",
+      "evidence_sample": [
+        {
+          "quote": "music adjustment doesn't work Perporly",
+          "review_id": "9c9757da-6b99-4c95-a0e7-0661ee858027"
+        }
+      ],
+      "issue_id": "playback.audio_quality_volume",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "Volume adjustment not working",
+      "named_by": "model",
+      "subtopic": "audio_quality_volume",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "Customer says the app uses too much data and phone storage.",
+      "evidence_sample": [
+        {
+          "quote": "Waste of Data and Storage in our phone",
+          "review_id": "a862b037-7542-4a3e-94ef-836b7092f4ef"
+        }
+      ],
+      "issue_id": "playback.battery_storage_resources",
+      "member_count": 1,
+      "model_coherence_check": true,
+      "model_note": "Single member.",
+      "name": "App wastes data and storage",
+      "named_by": "model",
+      "subtopic": "battery_storage_resources",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "The app wrongly reports no internet connection or fails to connect to devices like speakers, PCs, or consoles, while other apps work.",
+      "evidence_sample": [
+        {
+          "quote": "Keeps saying that there's no internet connection when my internet works fine for all other apps?",
+          "review_id": "bcdf315e-c82d-41f0-9fcd-ba5933dfe77e"
+        },
+        {
+          "quote": "I put the alarm on to connect with and it doesn't.",
+          "review_id": "4526d439-a6e4-4e0a-b0bc-ae0f9ce5bd96"
+        },
+        {
+          "quote": "if using mobile data it will work",
+          "review_id": "4ab2089a-ffa8-49e7-a8a3-aeb583a96796"
+        },
+        {
+          "quote": "Sometimes it's a pain to connect to other devices live a gaming console or the PC",
+          "review_id": "8b9d84a8-f650-4272-b332-4d60cb42377d"
+        },
+        {
+          "quote": "App says no internet connection available, but clearly I do otherwise",
+          "review_id": "c64af4d8-ac17-48fe-ae38-fd54b41b16b1"
+        },
+        {
+          "quote": "Always say no internet connection",
+          "review_id": "3df77a78-ad9a-4456-8be8-8178ffd43d67"
+        }
+      ],
+      "issue_id": "playback.connectivity_bluetooth_cast",
+      "member_count": 9,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "False no-internet error when connecting",
+      "named_by": "model",
+      "subtopic": "connectivity_bluetooth_cast",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "The app crashes, shows a black screen, or fails to start, especially after updates.",
+      "evidence_sample": [
+        {
+          "quote": "As I play music app crashes after this new update.",
+          "review_id": "89be32ab-664a-4647-a5e3-e4006a67e4e1"
+        },
+        {
+          "quote": "when I want to play my playlist, it does NOT play?! I have to delete the app and reinstall again and again",
+          "review_id": "06d4c78d-73b4-4b54-9ef3-3d5a0d18cb96"
+        },
+        {
+          "quote": "barely even works half the time",
+          "review_id": "98d936e1-fd1d-475a-89ee-0e1517cb60d3"
+        },
+        {
+          "quote": "Black screen of death.",
+          "review_id": "065c418e-7f18-42a3-b241-fe693b7a2b0c"
+        },
+        {
+          "quote": "the app is shoutdowning",
+          "review_id": "0fcf89b2-0b81-4838-bf5f-41c684e43b2d"
+        },
+        {
+          "quote": "the app is just crashing since the latest update.",
+          "review_id": "4a806587-0dde-4fb4-b4f1-f5c7d197c927"
+        }
+      ],
+      "issue_id": "playback.crashes_or_wont_open",
+      "member_count": 10,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "App crashes or will not open",
+      "named_by": "model",
+      "subtopic": "crashes_or_wont_open",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "Premium podcasts and lyrics lag or fail to load.",
+      "evidence_sample": [
+        {
+          "quote": "Paying for premium and certain podcasts are suddenly lagging. Unacceptable",
+          "review_id": "3899ed22-7b96-4c4f-9706-42985b8d8049"
+        },
+        {
+          "quote": "my songs lyrics stopped loading",
+          "review_id": "59f31721-b2c8-40c5-ba3c-b9fe64a58d68"
+        }
+      ],
+      "issue_id": "playback.lag_slow_loading",
+      "member_count": 2,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Playback lagging and slow loading",
+      "named_by": "model",
+      "subtopic": "lag_slow_loading",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "Liked songs do not play, the next song fails, or users cannot skip back a few seconds; also a missing token error.",
+      "evidence_sample": [
+        {
+          "quote": "New update had made this app worst for streaming music. Shifting to better apps",
+          "review_id": "a598cfe0-473b-4665-9eb2-4eebb3c1d877"
+        },
+        {
+          "quote": "doesn't work properly even if you network connection is best",
+          "review_id": "05fa5b8a-a49b-43be-bab5-38af789a65a7"
+        },
+        {
+          "quote": "I keep on running into issues where I click on songs in my liked music and they don't play",
+          "review_id": "a0cbc9d6-51bb-46f0-9ba9-ad4f4593c266"
+        },
+        {
+          "quote": "We can't even go back few second to play music?",
+          "review_id": "9e5f9745-f8be-48d3-b9de-4d118507d94a"
+        },
+        {
+          "quote": "I've a problem while playing next song",
+          "review_id": "509915ba-cf86-4baa-9bea-a73af229ca48"
+        },
+        {
+          "quote": "Getting no token provided message.",
+          "review_id": "686fa8a8-f220-4ddd-b283-d61dd242051a"
+        }
+      ],
+      "issue_id": "playback.other",
+      "member_count": 6,
+      "model_coherence_check": false,
+      "model_note": "686fa8a8 (token error) and 05fa5b8a (network works but fails) are technical errors rather than playback control issues.",
+      "name": "Songs fail to play or skip back",
+      "named_by": "model",
+      "subtopic": "other",
+      "topic": "playback"
+    },
+    {
+      "area": "playback",
+      "description": "Playback stops or pauses on its own mid-song or mid-show, or playlists show as playing without sound.",
+      "evidence_sample": [
+        {
+          "quote": "after a week of using this app it like wouldn't let me listen to music",
+          "review_id": "d3b74f36-aa48-42af-ae4a-d4a8b0499a60"
+        },
+        {
+          "quote": "It stops randomly. Sometimes 10 minutes, sometimes 2 hours.",
+          "review_id": "1cdc5bb2-8e8d-4267-8853-6c1dd4c7ef13"
+        },
+        {
+          "quote": "keeps stopping mid show",
+          "review_id": "039112fc-bbed-4540-83cc-890fcb129751"
+        },
+        {
+          "quote": "Continously pauses songs and podcasts randomly.",
+          "review_id": "f1abd13b-2391-4b04-8109-efa7f3cfed0b"
+        },
+        {
+          "quote": "it stopped letting me play anything",
+          "review_id": "a7b7539a-c8d3-4f4e-9edd-d46cd1b1fd12"
+        },
+        {
+          "quote": "it says playing your Spotify playlist but do not play the songs",
+          "review_id": "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e"
+        }
+      ],
+      "issue_id": "playback.stops_or_pauses",
+      "member_count": 9,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Music stops or pauses randomly",
+      "named_by": "model",
+      "subtopic": "stops_or_pauses",
+      "topic": "playback"
+    },
+    {
+      "area": "usability",
+      "description": "Customers say there are too many ads, including video ads and music playing between ads.",
+      "evidence_sample": [
+        {
+          "quote": "so many ad here",
+          "review_id": "ec96a982-68d0-44c4-b2be-13a999be4094"
+        },
+        {
+          "quote": "Good app but the ads are also like crazy there is a video when you listening music",
+          "review_id": "85e978f0-13e5-4264-8d3d-251ac5c36461"
+        },
+        {
+          "quote": "they play music in between ad's",
+          "review_id": "864e390b-135e-411a-9d03-f28648086cfd"
+        },
+        {
+          "quote": "It's good it's just ads and I'm having troubles getting my Playlist",
+          "review_id": "bfda45a9-d2a3-4aa6-8530-9abe87a63df8"
+        },
+        {
+          "quote": "useless music app music k naam pe khaali ad dikhata hai.",
+          "review_id": "6eb64519-37d4-4591-a47a-bbb96357de36"
+        },
+        {
+          "quote": "Very good app enna advertisement verudu premium best",
+          "review_id": "ed15bb17-865a-492b-ba1b-268f4cab78f6"
+        }
+      ],
+      "issue_id": "usability.ads_interruptions",
+      "member_count": 30,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Excessive ads interrupting listening",
+      "named_by": "model",
+      "subtopic": "ads_interruptions",
+      "topic": "usability"
+    },
+    {
+      "area": "usability",
+      "description": "Customers say basic player features were removed, apps auto-start despite disabled permissions, and video/audio switching is missing.",
+      "evidence_sample": [
+        {
+          "quote": "From last update they removed basic features of music player",
+          "review_id": "7084ced1-0428-4093-9328-442f74719b4f"
+        },
+        {
+          "quote": "Good just wish you had more control",
+          "review_id": "3a88c96b-2760-4eb8-9271-6c55e2304392"
+        },
+        {
+          "quote": "Apps automatically starts even after you have disabled all permissions.",
+          "review_id": "8cd35162-9223-42d1-8097-06e22fde94ea"
+        },
+        {
+          "quote": "Can't switch between video and audio only podcasts. Too much email spam.",
+          "review_id": "caa9bb7e-814c-4895-b872-10637419b9ba"
+        }
+      ],
+      "issue_id": "usability.other",
+      "member_count": 4,
+      "model_coherence_check": false,
+      "model_note": "Mixed: 3a88c96b and caa9bb7e are about control and spam, 8cd35162 is about permissions.",
+      "name": "Removed features and unwanted auto-play",
+      "named_by": "model",
+      "subtopic": "other",
+      "topic": "usability"
+    },
+    {
+      "area": "usability",
+      "description": "Playlist songs get added or played unexpectedly, and the Liked Songs list cannot be viewed.",
+      "evidence_sample": [
+        {
+          "quote": "I want to listen to the music I click on NOT whatever other stuff you throw into my playlists.",
+          "review_id": "4f6a50a1-9440-468c-b35f-961bca94fd88"
+        },
+        {
+          "quote": "Liked songs list is not viewing do something",
+          "review_id": "991dc66a-aba8-4844-be48-816539680877"
+        }
+      ],
+      "issue_id": "usability.playlist_library_management",
+      "member_count": 2,
+      "model_coherence_check": true,
+      "model_note": "Two members.",
+      "name": "Playlists and liked songs not managed well",
+      "named_by": "model",
+      "subtopic": "playlist_library_management",
+      "topic": "usability"
+    },
+    {
+      "area": "usability",
+      "description": "Shuffle plays repetitive songs, the shuffle menu was changed, and skips are limited to 6 with repeats requiring payment.",
+      "evidence_sample": [
+        {
+          "quote": "Take off Smart Shuffle Take that off now, it's so annoying",
+          "review_id": "d108ae38-c395-4789-9b6b-661d1efb60d7"
+        },
+        {
+          "quote": "I put my selection on shuffle plays same songs over and over",
+          "review_id": "e393cec1-67e8-4f58-a484-8d9d76dc8fd6"
+        },
+        {
+          "quote": "The new drop down menu where it only lets me shuffle.",
+          "review_id": "f8a85378-c4dd-40e2-b548-beebcdf3b991"
+        },
+        {
+          "quote": "they removed the mix old shuffle now it shuffle s the worst possible songs",
+          "review_id": "c13dcedc-50da-48a8-a90d-cfb037a66478"
+        },
+        {
+          "quote": "I CAN ONLY SKIP 6 OF THEM 6!!!",
+          "review_id": "ebc64fe2-9553-4528-87d5-cb4bb9783be6"
+        },
+        {
+          "quote": "I need to pay to repeat the song I heard .I am uninstalling spotify",
+          "review_id": "7a5919ad-16d4-4f29-8e6e-1041415d7eee"
+        }
+      ],
+      "issue_id": "usability.shuffle_queue_controls",
+      "member_count": 10,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Shuffle and skip controls restricted",
+      "named_by": "model",
+      "subtopic": "shuffle_queue_controls",
+      "topic": "usability"
+    },
+    {
+      "area": "usability",
+      "description": "Customers find the new home screen and navigation harder to use and cannot find previously saved playlists.",
+      "evidence_sample": [
+        {
+          "quote": "the new homescreen update is horrible",
+          "review_id": "94c9f2f9-36fa-4c11-936e-660514fe7a35"
+        },
+        {
+          "quote": "Just move it back to the way it was😒",
+          "review_id": "c0f03952-e067-4f25-99fc-18a1a045ed9f"
+        },
+        {
+          "quote": "The new home screen is terrible, I was listening to a playlist I had found the previous day and now I am unable to find it again",
+          "review_id": "0e71515c-ecf1-4b23-b783-00f58e51d96a"
+        },
+        {
+          "quote": "every update they make seems to make the app LESS user friendly",
+          "review_id": "0070e713-4cb7-4d78-954f-1764d5593c91"
+        },
+        {
+          "quote": "Rolling out big automatically playing audio elements,without any clear way to disable the automatic playing",
+          "review_id": "d455c11e-c530-4c03-a395-38f5a5cdb8d3"
+        },
+        {
+          "quote": "some features are missing in updated version",
+          "review_id": "02777996-211f-447b-94c4-99b61f049f78"
+        }
+      ],
+      "issue_id": "usability.ui_redesign_navigation",
+      "member_count": 16,
+      "model_coherence_check": true,
+      "model_note": "",
+      "name": "Disliked home screen redesign",
+      "named_by": "model",
+      "subtopic": "ui_redesign_navigation",
+      "topic": "usability"
+    }
+  ],
+  "membership_rule": "issue_id = topic.subtopic of the completed complaint/cancellation record; one issue per review (allow_multi_issue=false)"
+}

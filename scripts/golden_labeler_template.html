@@ -1,0 +1,185 @@
+<title>Golden 50 Labeler</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky progress header, one review card at a time, rubric beside it on wide screens and below on phones */
+:root {
+  --bg: #f5f6f2; --surface: #ffffff; --ink: #1c2421; --muted: #5d6a64; --line: #d9ded8;
+  --accent: #1f7a55; --accent-ink: #ffffff; --accent-soft: #e2f1e9; --warn: #a2600c; --warn-soft: #fbefdc;
+  --display: "Fraunces", Georgia, serif; --body: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121715; --surface: #1a211e; --ink: #e5ece8; --muted: #9aaaa2; --line: #2e3833;
+  --accent: #4cc293; --accent-ink: #0d1411; --accent-soft: #1d3a2e; --warn: #e9a855; --warn-soft: #3a2d18; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121715; --surface: #1a211e; --ink: #e5ece8; --muted: #9aaaa2; --line: #2e3833;
+  --accent: #4cc293; --accent-ink: #0d1411; --accent-soft: #1d3a2e; --warn: #e9a855; --warn-soft: #3a2d18; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); margin: 0 }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface) }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line) }
+header .wrap { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; padding-block: 12px }
+h1 { font: 600 1.35rem/1.2 var(--display); margin: 0; text-wrap: balance }
+.progress { flex: 1 1 220px; min-width: 0 }
+.bar { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden }
+.bar > i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s }
+.progress small { color: var(--muted); font: 500 .78rem var(--mono) }
+button { font: 500 .9rem var(--body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 8px 14px; cursor: pointer }
+button:hover { border-color: var(--accent) }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; margin-top: 20px }
+@media (max-width: 860px) { main { grid-template-columns: minmax(0, 1fr) } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 16px; min-width: 0 }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font: .78rem var(--mono); color: var(--muted) }
+.review { font-size: 1.12rem; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--bg); border-radius: 8px; padding: 14px 16px; margin: 0 }
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px }
+label { display: grid; gap: 4px; font-weight: 500; font-size: .85rem }
+label span.hint { color: var(--muted); font-weight: 400; font-size: .76rem }
+select, input[type=text], textarea { font: .95rem var(--body); padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); width: 100% }
+textarea { min-height: 64px; resize: vertical }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chips button { padding: 6px 10px; font-size: .85rem }
+.chips button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center }
+.nav { justify-content: space-between }
+.status { font: .8rem var(--mono); color: var(--muted) }
+.warn { color: var(--warn); background: var(--warn-soft); padding: 6px 10px; border-radius: 6px; font-size: .85rem }
+aside { font-size: .86rem; display: grid; gap: 14px; align-content: start; min-width: 0 }
+aside h2 { font: 600 1rem var(--display); margin: 0 }
+aside dl { margin: 0; display: grid; gap: 6px }
+aside dt { font: 600 .8rem var(--mono); color: var(--accent) }
+aside dd { margin: 0 0 4px; color: var(--muted) }
+.grid50 { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px }
+.grid50 button { padding: 4px 0; font: .72rem var(--mono); border-radius: 4px }
+.grid50 button.done { background: var(--accent-soft); border-color: var(--accent) }
+.grid50 button.cur { outline: 2px solid var(--ink) }
+.export { margin-top: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 12px }
+.export h2 { font: 600 1.1rem var(--display); margin: 0 }
+.export textarea { font: .75rem var(--mono); min-height: 160px; white-space: pre; overflow-x: auto }
+kbd { font: .75rem var(--mono); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px }
+</style>
+
+<header><div class="wrap">
+  <h1>Golden 50 Labeler</h1>
+  <div class="progress"><div class="bar"><i id="barfill"></i></div><small id="progtext">0 of 50 labelled</small></div>
+  <button class="primary" id="jumpExport">Copy labels</button>
+</div></header>
+
+<div class="wrap">
+<main>
+  <section class="card" aria-live="polite">
+    <div class="meta"><span id="pos"></span><span id="rid"></span><span id="ts"></span></div>
+    <p class="review" id="text"></p>
+    <div class="fields">
+      <label for="topic">Topic<span class="hint">highest-severity specific problem</span>
+        <select id="topic"><option value="">choose</option><option>access</option><option>usability</option><option>playback</option><option>downloads</option><option>catalog</option><option>billing</option><option>support</option><option>other</option></select></label>
+      <label for="intent">Intent<span class="hint">take the first that fits</span>
+        <select id="intent"><option value="">choose</option><option>cancellation</option><option>complaint</option><option>request</option><option>praise</option><option>unclear</option></select></label>
+      <label for="severity">Severity<span class="hint">1 none · 2 annoyance · 3 degraded · 4 blocked · 5 harm</span>
+        <select id="severity"><option value="">choose</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+    </div>
+    <div>
+      <label for="sentiment">Sentiment <span class="hint" id="sentval">0.0</span></label>
+      <div class="chips" id="sentchips"></div>
+    </div>
+    <div class="fields">
+      <label for="entities">Entities<span class="hint">comma separated features named in the text</span><input type="text" id="entities" placeholder="shuffle, ads"></label>
+      <label for="needs">Needs review<span class="hint">ambiguous, other language, missing context</span>
+        <select id="needs"><option value="false">false</option><option value="true">true</option></select></label>
+    </div>
+    <label for="quote">Evidence quote<span class="hint">exact words from the review; select text above and press <kbd>Q</kbd>, or leave blank to use the whole review</span>
+      <textarea id="quote"></textarea></label>
+    <div id="quotewarn" class="warn" hidden>This quote is not an exact substring of the review.</div>
+    <label for="notes">Notes (ambiguity, accepted alternatives)<textarea id="notes" placeholder="e.g. could also be billing"></textarea></label>
+    <div class="row nav">
+      <button id="prev">← Previous</button>
+      <span class="status" id="saved">Saved in this browser</span>
+      <button class="primary" id="next">Save and next →</button>
+    </div>
+  </section>
+  <aside>
+    <div class="grid50" id="grid"></div>
+    <h2>Shared definitions</h2>
+    <dl>
+      <dt>access</dt><dd>Login, signup, password, account access</dd>
+      <dt>usability</dt><dd>Navigation, controls, layout, queue/playlist management, ad interruptions</dd>
+      <dt>playback</dt><dd>Playback failure, crashes, lag, connection, audio quality, resource use</dd>
+      <dt>downloads</dt><dd>Downloading, saved music, offline listening</dd>
+      <dt>catalog</dt><dd>Missing songs/artists, search, recommendations, lyrics</dd>
+      <dt>billing</dt><dd>Price, charges, subscriptions, paywalls, premium entitlement, premium-only controls</dd>
+      <dt>support</dt><dd>Contacting support and its response</dd>
+      <dt>other</dt><dd>General praise/criticism, unrelated, no specific topic</dd>
+    </dl>
+    <p class="status">Intent precedence: cancellation → complaint → request → praise → unclear. Bare boycott slogans are unclear. Positive review: first specific praised feature, general praise = other. Stars are hidden on purpose.</p>
+  </aside>
+</main>
+
+<section class="export" id="export">
+  <h2>Send your labels back</h2>
+  <p>When all 50 are done, copy the CSV and paste it into the chat. Your work is also kept in this browser, so you can close the tab and come back.</p>
+  <div class="row"><button class="primary" id="copy">Copy CSV</button><span class="status" id="copystatus"></span></div>
+  <textarea id="csvout" readonly aria-label="CSV output"></textarea>
+</section>
+</div>
+
+<script>
+const DATA = __DATA__;
+const KEY = "golden50-labels-v1";
+let labels = {};
+try { labels = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { labels = {}; }
+let i = 0;
+const $ = id => document.getElementById(id);
+const SENTS = ["-1.0","-0.7","-0.4","-0.1","0.0","0.3","0.6","0.9","1.0"];
+SENTS.forEach(v => { const b = document.createElement("button"); b.type = "button"; b.textContent = v; b.setAttribute("aria-pressed","false");
+  b.onclick = () => { cur().sentiment = v; paintSent(); persist(); }; $("sentchips").appendChild(b); });
+DATA.forEach((d, k) => { const b = document.createElement("button"); b.type = "button"; b.textContent = k + 1; b.onclick = () => { save(); i = k; render(); }; $("grid").appendChild(b); });
+function cur() { const id = DATA[i].review_id; labels[id] = labels[id] || { sentiment: "", needs_review: "false" }; return labels[id]; }
+function complete(l) { return l && l.topic && l.intent && l.severity && l.sentiment !== "" && l.sentiment !== undefined; }
+function persist() { try { localStorage.setItem(KEY, JSON.stringify(labels)); $("saved").textContent = "Saved in this browser"; } catch (e) { $("saved").textContent = "Not saved (browser storage blocked) - copy the CSV before closing"; } refreshMeta(); }
+function paintSent() { const v = cur().sentiment; $("sentval").textContent = v === "" ? "not set" : v; [...$("sentchips").children].forEach(b => b.setAttribute("aria-pressed", String(b.textContent === v))); }
+function render() {
+  const d = DATA[i], l = cur();
+  $("pos").textContent = `Review ${i + 1} of ${DATA.length}`; $("rid").textContent = d.review_id; $("ts").textContent = d.review_timestamp;
+  $("text").textContent = d.review_text;
+  $("topic").value = l.topic || ""; $("intent").value = l.intent || ""; $("severity").value = l.severity || "";
+  $("entities").value = l.entities || ""; $("needs").value = l.needs_review || "false"; $("quote").value = l.evidence_quote || ""; $("notes").value = l.notes || "";
+  paintSent(); checkQuote(); refreshMeta();
+}
+function save() { const l = cur(); l.topic = $("topic").value; l.intent = $("intent").value; l.severity = $("severity").value;
+  l.entities = $("entities").value.trim(); l.needs_review = $("needs").value; l.evidence_quote = $("quote").value; l.notes = $("notes").value.trim(); persist(); }
+function checkQuote() { const q = $("quote").value; $("quotewarn").hidden = !q || DATA[i].review_text.includes(q); }
+["topic","intent","severity","needs"].forEach(id => $(id).addEventListener("change", save));
+["entities","quote","notes"].forEach(id => $(id).addEventListener("input", () => { save(); if (id === "quote") checkQuote(); }));
+$("next").onclick = () => { save(); if (i < DATA.length - 1) { i++; render(); window.scrollTo({top: 0}); } else $("export").scrollIntoView(); };
+$("prev").onclick = () => { save(); if (i > 0) { i--; render(); } };
+$("jumpExport").onclick = () => { save(); $("export").scrollIntoView({ behavior: "smooth" }); };
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, textarea, select")) return;
+  if (e.key === "q" || e.key === "Q") { const s = String(window.getSelection() || ""); if (s && DATA[i].review_text.includes(s)) { $("quote").value = s; save(); checkQuote(); } }
+  if (e.key === "ArrowRight") $("next").click(); if (e.key === "ArrowLeft") $("prev").click();
+});
+function csvCell(v) { v = v == null ? "" : String(v); return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+function buildCSV() {
+  const cols = ["review_id","review_text","review_rating","review_likes","app_version","review_timestamp","topic","intent","sentiment","severity","entities","evidence_quote","needs_review","notes"];
+  const lines = [cols.join(",")];
+  DATA.forEach(d => { const l = labels[d.review_id] || {};
+    const ents = (l.entities || "").split(",").map(s => s.trim()).filter(Boolean);
+    lines.push([d.review_id, d.review_text, d.review_rating, d.review_likes, d.app_version, d.review_timestamp, l.topic || "", l.intent || "",
+      l.sentiment || "", l.severity || "", JSON.stringify(ents), l.evidence_quote || "", l.needs_review || "false", l.notes || ""].map(csvCell).join(",")); });
+  return lines.join("\n");
+}
+function refreshMeta() {
+  const n = DATA.filter(d => complete(labels[d.review_id])).length;
+  $("barfill").style.width = (n / DATA.length * 100) + "%"; $("progtext").textContent = `${n} of ${DATA.length} labelled`;
+  [...$("grid").children].forEach((b, k) => { b.classList.toggle("done", complete(labels[DATA[k].review_id])); b.classList.toggle("cur", k === i); });
+  $("csvout").value = buildCSV();
+}
+$("copy").onclick = () => { save(); const t = buildCSV(); const n = DATA.filter(d => complete(labels[d.review_id])).length;
+  const done = () => { $("copystatus").textContent = `Copied ${n} of 50 complete rows. Paste it into the chat.`; };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, () => { $("csvout").select(); $("copystatus").textContent = "Copy was blocked. The text is selected; press Cmd+C."; });
+  else { $("csvout").select(); $("copystatus").textContent = "Text selected; press Cmd+C."; } };
+render();
+</script>

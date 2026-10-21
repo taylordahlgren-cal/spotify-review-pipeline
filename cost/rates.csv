@@ -1,0 +1,15 @@
+provider,model,processing_tier,billing_item,unit,usd_per_million,currency,source_url,checked_date,notes
+anthropic,claude-haiku-5-5,standard,input,token,0.10,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,"Prompts <=100k tokens. Official page: https://docs.claude.com/en/docs/about-claude/pricing (confirm in Console before paid runs)"
+anthropic,claude-haiku-5-5,standard,cache_write_5m,token,0.125,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,5-minute prompt-cache write; prompts <=100k tokens
+anthropic,claude-haiku-5-5,standard,cache_read,token,0.01,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,prompt-cache read; prompts <=100k tokens
+anthropic,claude-haiku-5-5,standard,output,token,0.50,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,includes any thinking tokens (thinking disabled in this pipeline)
+anthropic,claude-haiku-5-5,batch,input,token,0.05,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,Message Batches API 50% discount - NOT used; scenario only
+anthropic,claude-haiku-5-5,batch,output,token,0.25,USD,https://www.eesel.ai/blog/claude-haiku-5-5-pricing,2026-10-20,Message Batches API 50% discount - NOT used; scenario only
+anthropic,claude-sonnet-5-5,standard,input,token,2.00,USD,https://computingforgeeks.com/claude-haiku-5-5-released-features-benchmarks/,2026-10-20,Official page: https://docs.claude.com/en/docs/about-claude/pricing (confirm in Console)
+anthropic,claude-sonnet-5-5,standard,cache_write_5m,token,2.50,USD,https://computingforgeeks.com/claude-haiku-5-5-released-features-benchmarks/,2026-10-20,5-minute prompt-cache write
+anthropic,claude-sonnet-5-5,standard,cache_read,token,0.10,USD,https://computingforgeeks.com/claude-haiku-5-5-released-features-benchmarks/,2026-10-20,prompt-cache read
+anthropic,claude-sonnet-5-5,standard,output,token,10.00,USD,https://computingforgeeks.com/claude-haiku-5-5-released-features-benchmarks/,2026-10-20,
+local,fake-keyword-v1,standard,input,token,0,USD,n/a,2026-10-20,offline keyword stub used only in tests; never in graded outputs
+local,fake-keyword-v1,standard,cache_write_5m,token,0,USD,n/a,2026-10-20,
+local,fake-keyword-v1,standard,cache_read,token,0,USD,n/a,2026-10-20,
+local,fake-keyword-v1,standard,output,token,0,USD,n/a,2026-10-20,

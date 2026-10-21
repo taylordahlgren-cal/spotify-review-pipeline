@@ -1,0 +1,149 @@
+{
+  "n": 50,
+  "valid_predictions": 50,
+  "topic_agreement": 0.6,
+  "intent_agreement": 0.78,
+  "severity_exact_agreement": 0.62,
+  "severity_within_1": 0.8,
+  "severity_mae_valid": 0.7,
+  "sentiment_agreement_tol_0.3": 0.857,
+  "sentiment_labelled_cases": 49,
+  "sentiment_mae_valid": 0.184,
+  "joint_topic_intent_severity": 0.38,
+  "quote_exact_substring_rate": 1.0,
+  "quote_is_full_text": 35,
+  "unsupported_entities_total": 7,
+  "ambiguous_cases": 21,
+  "needs_review": {
+    "human_true": 11,
+    "predicted_true": 11,
+    "both_true": 4
+  },
+  "topic_per_class": {
+    "access": {
+      "support": 3,
+      "predicted": 0,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "usability": {
+      "support": 5,
+      "predicted": 10,
+      "precision": 0.2,
+      "recall": 0.4,
+      "f1": 0.267
+    },
+    "playback": {
+      "support": 8,
+      "predicted": 4,
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.333
+    },
+    "downloads": {
+      "support": 1,
+      "predicted": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "catalog": {
+      "support": 3,
+      "predicted": 5,
+      "precision": 0.2,
+      "recall": 0.333,
+      "f1": 0.25
+    },
+    "billing": {
+      "support": 2,
+      "predicted": 3,
+      "precision": 0.667,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    "other": {
+      "support": 28,
+      "predicted": 27,
+      "precision": 0.815,
+      "recall": 0.786,
+      "f1": 0.8
+    }
+  },
+  "topic_macro_f1": 0.493,
+  "intent_per_class": {
+    "cancellation": {
+      "support": 0,
+      "predicted": 2,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0
+    },
+    "complaint": {
+      "support": 20,
+      "predicted": 18,
+      "precision": 0.889,
+      "recall": 0.8,
+      "f1": 0.842
+    },
+    "request": {
+      "support": 3,
+      "predicted": 3,
+      "precision": 0.667,
+      "recall": 0.667,
+      "f1": 0.667
+    },
+    "praise": {
+      "support": 19,
+      "predicted": 21,
+      "precision": 0.857,
+      "recall": 0.947,
+      "f1": 0.9
+    },
+    "unclear": {
+      "support": 8,
+      "predicted": 6,
+      "precision": 0.5,
+      "recall": 0.375,
+      "f1": 0.429
+    }
+  },
+  "intent_macro_f1": 0.709,
+  "topic_confusion_human_to_pred": {
+    "access->other": 1,
+    "access->playback": 2,
+    "billing->billing": 2,
+    "catalog->catalog": 1,
+    "catalog->other": 2,
+    "downloads->downloads": 1,
+    "other->billing": 1,
+    "other->catalog": 2,
+    "other->other": 22,
+    "other->usability": 3,
+    "playback->catalog": 1,
+    "playback->playback": 2,
+    "playback->usability": 5,
+    "usability->catalog": 1,
+    "usability->other": 2,
+    "usability->usability": 2
+  },
+  "severity_confusion_human_to_pred": {
+    "1->1": 25,
+    "1->2": 1,
+    "2->1": 1,
+    "2->2": 3,
+    "2->3": 2,
+    "2->4": 1,
+    "3->2": 3,
+    "3->3": 2,
+    "4->1": 1,
+    "4->2": 3,
+    "4->3": 2,
+    "4->4": 1,
+    "5->1": 1,
+    "5->2": 3,
+    "5->3": 1
+  },
+  "sentiment_tolerance_predeclared": 0.3,
+  "note": "50 cases are a small diagnostic sample, not a population accuracy estimate. Golden labels were not used in prompts, examples, thresholds or routing."
+}

@@ -1,0 +1,157 @@
+{
+  "check": {
+    "attempts": 1,
+    "cited_ids": [
+      "C04",
+      "C05",
+      "C08",
+      "C12",
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "T03",
+      "T04",
+      "T09",
+      "T10"
+    ],
+    "problems": [],
+    "status": "pass"
+  },
+  "memo": {
+    "alternatives": [
+      {
+        "area": "usability",
+        "assessment": "Highest area severity sum (139) but lower mean severity (2.241935), with no severity 4+ records (0.0%); ads at 61 and the home redesign at 36 are the main issues. Strong runner-up.",
+        "claim_ids": [
+          "T03",
+          "T04",
+          "T06",
+          "C12",
+          "C16"
+        ]
+      },
+      {
+        "area": "playback",
+        "assessment": "Smaller volume (38 complaints) but severe: mean 3.052632 and 23.7% severity 4+. Crashes score 34 and stops 29. Worth a targeted stability fix.",
+        "claim_ids": [
+          "T13",
+          "T16",
+          "T18",
+          "C20",
+          "C24"
+        ]
+      },
+      {
+        "area": "access",
+        "assessment": "Small (9 complaints) but 88.9% severity 4+; login failure scores 23. A candidate for a small fix.",
+        "claim_ids": [
+          "T31",
+          "T36",
+          "C36"
+        ]
+      },
+      {
+        "area": "catalog",
+        "assessment": "Lower priority at severity sum 46.",
+        "claim_ids": [
+          "T27"
+        ]
+      },
+      {
+        "area": "downloads",
+        "assessment": "Lowest priority at severity sum 13.",
+        "claim_ids": [
+          "T39"
+        ]
+      }
+    ],
+    "dashboard_recommendations": [
+      {
+        "claim_ids": [
+          "C08",
+          "C05"
+        ],
+        "detail": "Pin the free tier/paywall priority score and complaint count as a headline tile.",
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall"
+        ],
+        "title": "Track free-tier paywall issue"
+      },
+      {
+        "claim_ids": [
+          "C04"
+        ],
+        "detail": "Show other.general as a non-area row so it does not crowd out specific areas.",
+        "issue_ids": [
+          "other.general"
+        ],
+        "title": "Separate 'other' from areas"
+      },
+      {
+        "claim_ids": [
+          "T18",
+          "T36"
+        ],
+        "detail": "Flag playback and access, which have high severe shares despite lower volume.",
+        "issue_ids": [
+          "playback.crashes_or_wont_open",
+          "access.login_failure"
+        ],
+        "title": "Add severity-4+ view"
+      }
+    ],
+    "limitations": [
+      "Self-selected app-store reviews; not representative of all users.",
+      "Cancellation language is expressed intent, not observed churn; no revenue or causal impact is estimated.",
+      "Classification coverage: 500 records [K01] all completed [K02], 479 by model call [K03] and 21 by exact-text reuse [K04], so duplicates share one label.",
+      "Usability leads billing/support on area severity sum, so the recommendation also weighs mean severity and a single top issue; the margin is modest."
+    ],
+    "recommendation": "Under the baseline rule (priority_score = complaint_count x mean_severity = severity_sum), the generic \"other.general\" issue ranks first at 113 [C04], but it is not a product area. Among specific areas, usability has the highest severity sum at 139 [T03], while billing_support is second at 124 [T09] and is driven by free tier limits and paywall, the top specific issue at 109 [C08] from 41 complaints [C05]. I recommend billing/support, because it has higher mean severity (2.695652 [T10]) than usability (2.241935 [T04]); usability is the close alternative, with ads at 61 [C12]. This is self-selected historical review evidence and expresses intent only.",
+    "recommended_area": "billing_support",
+    "supporting_evidence": [
+      {
+        "claim_ids": [
+          "C08",
+          "C05"
+        ],
+        "issue_ids": [
+          "billing.free_tier_restrictions_paywall"
+        ],
+        "point": "Free tier limits/paywall is the top specific issue by priority score (109) and has 41 complaints.",
+        "review_ids": [
+          "4966b59e-cf09-4881-b3ea-34fd4118a553",
+          "11ad400f-4487-4dfa-a9da-c8d624f4f107",
+          "21915fcd-9a35-48ba-b277-6296c4154603"
+        ]
+      },
+      {
+        "claim_ids": [
+          "C04"
+        ],
+        "issue_ids": [
+          "other.general"
+        ],
+        "point": "Generic dissatisfaction ranks first at 113 but is not actionable as a product area.",
+        "review_ids": [
+          "178c3b49-b689-4fe4-92a2-2257a58e6d95"
+        ]
+      },
+      {
+        "claim_ids": [
+          "T09",
+          "T10",
+          "T04"
+        ],
+        "issue_ids": [],
+        "point": "Billing_support severity sum is 124 across area records, with a higher mean severity than usability.",
+        "review_ids": []
+      }
+    ],
+    "title": "Next-quarter focus: billing/support (free tier and paywall) leads the specific areas"
+  },
+  "meta": {
+    "generated_at": "2026-10-21T00:34:46.409+00:00",
+    "model": "claude-sonnet-5-5"
+  }
+}

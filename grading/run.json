@@ -1,0 +1,29 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 660622,
+  "analysis_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "declared_classification_scope": "sample:100000",
+  "exported_at": "2026-10-21T02:52:25.105+00:00",
+  "full_corpus_input": true,
+  "label_configs": {
+    "enrich": "claude-haiku-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "enrich_fallback": "claude-sonnet-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "group": "claude-haiku-5-5:effort=low:thinking=disabled+group-v1+schema-v1",
+    "memo": "claude-sonnet-5-5:effort=low:thinking=disabled+memo-v2+schema-v1",
+    "provider": "anthropic",
+    "verify": "claude-haiku-5-5:effort=low:thinking=disabled+verify-v1+schema-v1"
+  },
+  "run_id": "run-a87ebe74ab",
+  "scope_detail": {
+    "declared": "sample:100000",
+    "in_scope_distinct_texts": 78099,
+    "in_scope_rows": 100000,
+    "method": "sample:N = first N nonempty rows ordered by SHA-256(seed:review_id) as in manifest.json",
+    "rows_completable_by_exact_text_reuse": 237942,
+    "rows_outside_scope_without_matching_text": 422667
+  },
+  "version": "a5-audit-v1"
+}

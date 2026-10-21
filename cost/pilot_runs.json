@@ -1,0 +1,106 @@
+{
+  "cold": {
+    "run_id": "pilot-cold-20261021T002406Z",
+    "started_at": "2026-10-21T00:24:06+00:00",
+    "wall_s": 51.751,
+    "stage_wall_s": {
+      "ingest": 0.003,
+      "enrich": 28.903,
+      "verify": 3.265,
+      "materialize": 0.01,
+      "group": 6.029,
+      "rank": 0.017,
+      "memo": 13.019
+    },
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "ids": 100,
+    "unique_texts": 100,
+    "completed": 100,
+    "failed_or_quarantined": 0,
+    "cache_hits": 0,
+    "verify_declared": 20,
+    "fallback_quota": "max(1, 0.5% of texts)",
+    "stage_config": {
+      "enrich": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+        "batch_size": 50
+      },
+      "verify": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+verify-v1+schema-v1",
+        "batch_size": 50
+      },
+      "group": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+group-v1+schema-v1",
+        "batch_size": 1
+      },
+      "memo": {
+        "model": "claude-sonnet-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-sonnet-5-5:effort=low:thinking=disabled+memo-v1+schema-v1",
+        "batch_size": 1
+      }
+    }
+  },
+  "warm": {
+    "run_id": "pilot-warm-20261021T002406Z",
+    "started_at": "2026-10-21T00:24:58+00:00",
+    "wall_s": 0.04,
+    "stage_wall_s": {
+      "ingest": 0.0,
+      "enrich": 0.003,
+      "verify": 0.004,
+      "materialize": 0.007,
+      "group": 0.003,
+      "rank": 0.004,
+      "memo": 0.003
+    },
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "ids": 100,
+    "unique_texts": 100,
+    "completed": 100,
+    "failed_or_quarantined": 0,
+    "cache_hits": 100,
+    "verify_declared": 20,
+    "fallback_quota": "max(1, 0.5% of texts)",
+    "stage_config": {
+      "enrich": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+        "batch_size": 50
+      },
+      "verify": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+verify-v1+schema-v1",
+        "batch_size": 50
+      },
+      "group": {
+        "model": "claude-haiku-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-haiku-5-5:effort=low:thinking=disabled+group-v1+schema-v1",
+        "batch_size": 1
+      },
+      "memo": {
+        "model": "claude-sonnet-5-5",
+        "effort": "low",
+        "thinking": "disabled",
+        "label_config": "claude-sonnet-5-5:effort=low:thinking=disabled+memo-v1+schema-v1",
+        "batch_size": 1
+      }
+    }
+  }
+}

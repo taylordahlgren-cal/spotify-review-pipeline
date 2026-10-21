@@ -1,0 +1,10 @@
+{
+  "completed": 236894,
+  "completed_by_exact_text_reuse": 159552,
+  "completed_by_model_call": 77342,
+  "quarantine:empty_review_text": 13,
+  "quarantine:invalid_model_output": 1048,
+  "quarantine:outside_declared_classification_scope": 422667,
+  "quarantined": 423728,
+  "total_records": 660622
+}

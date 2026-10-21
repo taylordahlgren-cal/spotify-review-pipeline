@@ -1,0 +1,569 @@
+{
+  "area_facts": [
+    {
+      "area": "other",
+      "fact_id": "T01",
+      "metric": "complaint_count",
+      "value": "40279"
+    },
+    {
+      "area": "other",
+      "fact_id": "T02",
+      "metric": "cancellation_count",
+      "value": "1736"
+    },
+    {
+      "area": "other",
+      "fact_id": "T03",
+      "metric": "severity_sum",
+      "value": "79187"
+    },
+    {
+      "area": "other",
+      "fact_id": "T04",
+      "metric": "mean_severity",
+      "value": "1.965962"
+    },
+    {
+      "area": "other",
+      "fact_id": "T05",
+      "metric": "share_of_ranked_records_pct",
+      "value": "54.0"
+    },
+    {
+      "area": "other",
+      "fact_id": "T06",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "0.0"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T07",
+      "metric": "complaint_count",
+      "value": "13739"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T08",
+      "metric": "cancellation_count",
+      "value": "1219"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T09",
+      "metric": "severity_sum",
+      "value": "30785"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T10",
+      "metric": "mean_severity",
+      "value": "2.240702"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T11",
+      "metric": "share_of_ranked_records_pct",
+      "value": "18.4"
+    },
+    {
+      "area": "usability",
+      "fact_id": "T12",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "0.2"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T13",
+      "metric": "complaint_count",
+      "value": "8773"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T14",
+      "metric": "cancellation_count",
+      "value": "1924"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T15",
+      "metric": "severity_sum",
+      "value": "23467"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T16",
+      "metric": "mean_severity",
+      "value": "2.674912"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T17",
+      "metric": "share_of_ranked_records_pct",
+      "value": "11.8"
+    },
+    {
+      "area": "billing_support",
+      "fact_id": "T18",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "3.0"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T19",
+      "metric": "complaint_count",
+      "value": "5899"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T20",
+      "metric": "cancellation_count",
+      "value": "530"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T21",
+      "metric": "severity_sum",
+      "value": "17635"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T22",
+      "metric": "mean_severity",
+      "value": "2.989490"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T23",
+      "metric": "share_of_ranked_records_pct",
+      "value": "7.9"
+    },
+    {
+      "area": "playback",
+      "fact_id": "T24",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "17.7"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T25",
+      "metric": "complaint_count",
+      "value": "3104"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T26",
+      "metric": "cancellation_count",
+      "value": "233"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T27",
+      "metric": "severity_sum",
+      "value": "7457"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T28",
+      "metric": "mean_severity",
+      "value": "2.402384"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T29",
+      "metric": "share_of_ranked_records_pct",
+      "value": "4.2"
+    },
+    {
+      "area": "catalog",
+      "fact_id": "T30",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "0.8"
+    },
+    {
+      "area": "access",
+      "fact_id": "T31",
+      "metric": "complaint_count",
+      "value": "1711"
+    },
+    {
+      "area": "access",
+      "fact_id": "T32",
+      "metric": "cancellation_count",
+      "value": "143"
+    },
+    {
+      "area": "access",
+      "fact_id": "T33",
+      "metric": "severity_sum",
+      "value": "6471"
+    },
+    {
+      "area": "access",
+      "fact_id": "T34",
+      "metric": "mean_severity",
+      "value": "3.781999"
+    },
+    {
+      "area": "access",
+      "fact_id": "T35",
+      "metric": "share_of_ranked_records_pct",
+      "value": "2.3"
+    },
+    {
+      "area": "access",
+      "fact_id": "T36",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "77.1"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T37",
+      "metric": "complaint_count",
+      "value": "1074"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T38",
+      "metric": "cancellation_count",
+      "value": "73"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T39",
+      "metric": "severity_sum",
+      "value": "3276"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T40",
+      "metric": "mean_severity",
+      "value": "3.050279"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T41",
+      "metric": "share_of_ranked_records_pct",
+      "value": "1.4"
+    },
+    {
+      "area": "downloads",
+      "fact_id": "T42",
+      "metric": "severity_4_plus_pct_of_area",
+      "value": "17.7"
+    }
+  ],
+  "baseline_rule": "priority_score = complaint_count x mean_severity = severity_sum over complaint+cancellation records; ties by issue_id",
+  "coverage_facts": [
+    {
+      "fact_id": "K01",
+      "metric": "total_records",
+      "value": "660622"
+    },
+    {
+      "fact_id": "K02",
+      "metric": "completed",
+      "value": "236894"
+    },
+    {
+      "fact_id": "K03",
+      "metric": "quarantined",
+      "value": "423728"
+    },
+    {
+      "fact_id": "K04",
+      "metric": "completed_by_model_call",
+      "value": "77342"
+    },
+    {
+      "fact_id": "K05",
+      "metric": "completed_by_exact_text_reuse",
+      "value": "159552"
+    },
+    {
+      "fact_id": "K06",
+      "metric": "quarantine:outside_declared_classification_scope",
+      "value": "422667"
+    },
+    {
+      "fact_id": "K07",
+      "metric": "quarantine:empty_review_text",
+      "value": "13"
+    },
+    {
+      "fact_id": "K08",
+      "metric": "quarantine:invalid_model_output",
+      "value": "1048"
+    }
+  ],
+  "evidence": [
+    {
+      "issue_id": "other.general",
+      "quote": "It has officially became the most useless app",
+      "review_id": "2ca9939f-33f5-4eb5-809d-a51c15be8d30"
+    },
+    {
+      "issue_id": "other.general",
+      "quote": "doesn't deserve any money from Android users",
+      "review_id": "8ead8dfb-78bc-45e8-82d2-953ea2870b87"
+    },
+    {
+      "issue_id": "other.general",
+      "quote": "New update ruined the app. It has become annoying.",
+      "review_id": "06cff04b-0d2f-49c9-8dc1-f33aff8ac40d"
+    },
+    {
+      "issue_id": "billing.free_tier_restrictions_paywall",
+      "quote": "Pay 2 use app adding repeat as an premium option",
+      "review_id": "67788933-9b7d-4e82-a7df-cb5b1a95dabd"
+    },
+    {
+      "issue_id": "billing.free_tier_restrictions_paywall",
+      "quote": "I cant choose the song that i want and only 6 skips per hour this is becoming trash",
+      "review_id": "86151d66-9d56-43ea-8514-4a33c1646656"
+    },
+    {
+      "issue_id": "billing.free_tier_restrictions_paywall",
+      "quote": "only premium is better , but not too bad as simple",
+      "review_id": "ec6c275c-a4e9-4d1d-877c-94be22ecc788"
+    },
+    {
+      "issue_id": "usability.ads_interruptions",
+      "quote": "Too much ads very irritating",
+      "review_id": "bd157456-e532-4177-b5b3-201ee893284f"
+    },
+    {
+      "issue_id": "usability.ads_interruptions",
+      "quote": "Greedy constant ads, almost never plays the actual track you want",
+      "review_id": "7927e560-d3b2-4f27-8c4c-38bc05c161bf"
+    },
+    {
+      "issue_id": "usability.ads_interruptions",
+      "quote": "when you listennto songs it gives you so many adds",
+      "review_id": "33304a50-acee-4525-8fd9-5588100db615"
+    },
+    {
+      "issue_id": "usability.shuffle_queue_controls",
+      "quote": "it reshuffles itself, and plays my \"top played\" songs first, then I should be able to do that",
+      "review_id": "9eb87a92-b39c-48e6-a9d7-7e419e19c6a2"
+    },
+    {
+      "issue_id": "usability.shuffle_queue_controls",
+      "quote": "you can't even select what song you want to play at that time.",
+      "review_id": "c2f21d1b-6d8c-4d6a-92f3-1931ca70cb4f"
+    },
+    {
+      "issue_id": "usability.shuffle_queue_controls",
+      "quote": "No shuffle available,only limited Songs for day to listen",
+      "review_id": "200d9033-a2c2-4933-80de-5f56aac59cce"
+    },
+    {
+      "issue_id": "playback.stops_or_pauses",
+      "quote": "Why is my spotify, not playing the next song after I close and reopen this app?",
+      "review_id": "6df2565e-3944-41d9-9be6-cb1e71381dcc"
+    },
+    {
+      "issue_id": "playback.stops_or_pauses",
+      "quote": "Playlists are not playing correctly at the moment.",
+      "review_id": "a4b929fc-ff93-4568-a620-04c7b3290064"
+    },
+    {
+      "issue_id": "playback.stops_or_pauses",
+      "quote": "the music simply stops",
+      "review_id": "0058cbec-4f42-495a-a9b4-051f5b605891"
+    },
+    {
+      "issue_id": "playback.crashes_or_wont_open",
+      "quote": "It refuses to function 5 times a day & needing a force stop every time",
+      "review_id": "5f3cdf7f-c5a8-40d3-9b6b-a9f8a50ccb00"
+    },
+    {
+      "issue_id": "playback.crashes_or_wont_open",
+      "quote": "App stopped working on my S21...gets stuck on the initial load screen.",
+      "review_id": "391f8714-d78d-4dda-959c-a17472c59944"
+    },
+    {
+      "issue_id": "playback.crashes_or_wont_open",
+      "quote": "pero aún así no abre la app",
+      "review_id": "c5126ce8-54a9-44af-aacf-eeca0815ea87"
+    }
+  ],
+  "notes": [
+    "Areas: billing_support combines topics billing and support.",
+    "share_of_ranked_records_pct = area complaints / all complaint+cancellation records x 100.",
+    "Records include exact-text reuse: duplicate texts carry one shared model label (cache_source_id)."
+  ],
+  "question": "Where should the next quarter of product effort go: access, usability, playback, or billing/support?",
+  "ranking": [
+    {
+      "cancellation_count_info": "1588",
+      "claims": {
+        "complaint_count": "C01",
+        "mean_severity": "C03",
+        "priority_score": "C04",
+        "severity_sum": "C02"
+      },
+      "complaint_count": "39942",
+      "description": "Customers leave broad negative remarks about the app, updates, or its value without naming a specific problem.",
+      "issue_id": "other.general",
+      "issue_name": "General dissatisfaction and vague complaints",
+      "mean_severity": "1.970382",
+      "priority_score": "78701",
+      "rank": 1,
+      "severity_sum": "78701"
+    },
+    {
+      "cancellation_count_info": "1636",
+      "claims": {
+        "complaint_count": "C05",
+        "mean_severity": "C07",
+        "priority_score": "C08",
+        "severity_sum": "C06"
+      },
+      "complaint_count": "6975",
+      "description": "Free users complain about skip limits, inability to pick songs, forced ads, and features locked behind premium.",
+      "issue_id": "billing.free_tier_restrictions_paywall",
+      "issue_name": "Free tier limits and paywalled features",
+      "mean_severity": "2.711971",
+      "priority_score": "18916",
+      "rank": 2,
+      "severity_sum": "18916"
+    },
+    {
+      "cancellation_count_info": "437",
+      "claims": {
+        "complaint_count": "C09",
+        "mean_severity": "C11",
+        "priority_score": "C12",
+        "severity_sum": "C10"
+      },
+      "complaint_count": "8075",
+      "description": "Customers say there are too many ads while listening, with ads playing in the middle of tracks.",
+      "issue_id": "usability.ads_interruptions",
+      "issue_name": "Excessive ads interrupting listening",
+      "mean_severity": "2.040991",
+      "priority_score": "16481",
+      "rank": 3,
+      "severity_sum": "16481"
+    },
+    {
+      "cancellation_count_info": "367",
+      "claims": {
+        "complaint_count": "C13",
+        "mean_severity": "C15",
+        "priority_score": "C16",
+        "severity_sum": "C14"
+      },
+      "complaint_count": "2435",
+      "description": "Customers cannot turn off shuffle, pick specific songs, or use backward and queue controls as they want.",
+      "issue_id": "usability.shuffle_queue_controls",
+      "issue_name": "Shuffle forced and limited playback controls",
+      "mean_severity": "2.740862",
+      "priority_score": "6674",
+      "rank": 4,
+      "severity_sum": "6674"
+    },
+    {
+      "cancellation_count_info": "210",
+      "claims": {
+        "complaint_count": "C17",
+        "mean_severity": "C19",
+        "priority_score": "C20",
+        "severity_sum": "C18"
+      },
+      "complaint_count": "1837",
+      "description": "Customers say music stops mid-playlist, fails to continue after reopening, or stops without warning.",
+      "issue_id": "playback.stops_or_pauses",
+      "issue_name": "Music stops or pauses unexpectedly",
+      "mean_severity": "3.058247",
+      "priority_score": "5618",
+      "rank": 5,
+      "severity_sum": "5618"
+    },
+    {
+      "cancellation_count_info": "99",
+      "claims": {
+        "complaint_count": "C21",
+        "mean_severity": "C23",
+        "priority_score": "C24",
+        "severity_sum": "C22"
+      },
+      "complaint_count": "1439",
+      "description": "Customers report the app crashes, freezes on the loading screen, or will not open after an update.",
+      "issue_id": "playback.crashes_or_wont_open",
+      "issue_name": "App crashes or fails to open",
+      "mean_severity": "3.331480",
+      "priority_score": "4794",
+      "rank": 6,
+      "severity_sum": "4794"
+    },
+    {
+      "cancellation_count_info": "77",
+      "claims": {
+        "complaint_count": "C25",
+        "mean_severity": "C27",
+        "priority_score": "C28",
+        "severity_sum": "C26"
+      },
+      "complaint_count": "1116",
+      "description": "Customers cannot log in through email, phone, or Facebook, or get errors when entering correct credentials.",
+      "issue_id": "access.login_failure",
+      "issue_name": "Unable to log in to account",
+      "mean_severity": "3.882616",
+      "priority_score": "4333",
+      "rank": 7,
+      "severity_sum": "4333"
+    },
+    {
+      "cancellation_count_info": "269",
+      "claims": {
+        "complaint_count": "C29",
+        "mean_severity": "C31",
+        "priority_score": "C32",
+        "severity_sum": "C30"
+      },
+      "complaint_count": "1659",
+      "description": "Customers find the updated interface hard to navigate, with features moved or hidden in menus.",
+      "issue_id": "usability.ui_redesign_navigation",
+      "issue_name": "Confusing interface after redesign",
+      "mean_severity": "2.272453",
+      "priority_score": "3770",
+      "rank": 8,
+      "severity_sum": "3770"
+    },
+    {
+      "cancellation_count_info": "96",
+      "claims": {
+        "complaint_count": "C33",
+        "mean_severity": "C35",
+        "priority_score": "C36",
+        "severity_sum": "C34"
+      },
+      "complaint_count": "1035",
+      "description": "Customers say songs, albums, or artists are missing, restricted, or play only as a short clip.",
+      "issue_id": "catalog.missing_or_removed_content",
+      "issue_name": "Songs unavailable or only previews play",
+      "mean_severity": "2.416425",
+      "priority_score": "2501",
+      "rank": 9,
+      "severity_sum": "2501"
+    },
+    {
+      "cancellation_count_info": "58",
+      "claims": {
+        "complaint_count": "C37",
+        "mean_severity": "C39",
+        "priority_score": "C40",
+        "severity_sum": "C38"
+      },
+      "complaint_count": "852",
+      "description": "Customers report the wrong song playing, playback glitches, or music that will not play even after reinstalling.",
+      "issue_id": "playback.other",
+      "issue_name": "Wrong songs and glitchy playback",
+      "mean_severity": "2.779343",
+      "priority_score": "2368",
+      "rank": 10,
+      "severity_sum": "2368"
+    }
+  ]
+}

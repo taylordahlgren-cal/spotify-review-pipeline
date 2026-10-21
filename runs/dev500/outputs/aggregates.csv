@@ -1,0 +1,31 @@
+rank,issue_id,area,issue_name,complaint_count,cancellation_count,severity_sum,mean_severity,priority_score,share_of_ranked_records_pct,needs_review_count
+1,other.general,other,General dissatisfaction with app,58,9,113,1.948276,113,24.3,8
+2,billing.free_tier_restrictions_paywall,billing_support,Free tier limits and premium paywall,41,5,109,2.658537,109,17.2,8
+3,usability.ads_interruptions,usability,Excessive ads interrupting listening,30,2,61,2.033333,61,12.6,3
+4,usability.ui_redesign_navigation,usability,Disliked home screen redesign,16,2,36,2.250000,36,6.7,2
+5,playback.crashes_or_wont_open,playback,App crashes or will not open,10,1,34,3.400000,34,4.2,1
+6,playback.stops_or_pauses,playback,Music stops or pauses randomly,9,2,29,3.222222,29,3.8,1
+7,usability.shuffle_queue_controls,usability,Shuffle and skip controls restricted,10,1,28,2.800000,28,4.2,3
+8,playback.connectivity_bluetooth_cast,playback,False no-internet error when connecting,9,0,27,3.000000,27,3.8,2
+9,access.login_failure,access,Unable to log into account,6,1,23,3.833333,23,2.5,0
+10,catalog.missing_or_removed_content,catalog,Songs and features removed or missing,8,0,20,2.500000,20,3.3,1
+11,playback.other,playback,Songs fail to play or skip back,6,3,16,2.666667,16,2.5,2
+12,catalog.recommendations_algorithm,catalog,Unwanted song recommendations and shuffle,6,1,12,2.000000,12,2.5,2
+13,billing.premium_not_recognized,billing_support,Paid premium not recognized in app,3,0,10,3.333333,10,1.3,1
+14,catalog.lyrics,catalog,Lyrics fail to load or display,4,0,10,2.500000,10,1.7,0
+15,usability.other,usability,Removed features and unwanted auto-play,4,0,9,2.250000,9,1.7,0
+16,access.logged_out,access,Unexpectedly logged out of account,2,0,8,4.000000,8,0.8,0
+17,downloads.downloads_disappear,downloads,Downloaded music disappears or deleted,2,1,6,3.000000,6,0.8,0
+18,playback.lag_slow_loading,playback,Playback lagging and slow loading,2,0,6,3.000000,6,0.8,0
+19,access.account_hacked_or_lost,access,Account hacked and playlists lost,1,0,5,5.000000,5,0.4,0
+20,usability.playlist_library_management,usability,Playlists and liked songs not managed well,2,0,5,2.500000,5,0.8,1
+21,billing.plan_management_family_student,billing_support,Cannot sign up for individual premium,1,0,3,3.000000,3,0.4,0
+22,catalog.search,catalog,Liked songs open wrong tracks,1,0,3,3.000000,3,0.4,1
+23,downloads.offline_mode_fails,downloads,Offline mode not working,1,0,3,3.000000,3,0.4,0
+24,billing.price_increase_cost,billing_support,Charges for playing music,1,0,2,2.000000,2,0.4,1
+25,downloads.cannot_download,downloads,Unable to download music,1,0,2,2.000000,2,0.4,1
+26,downloads.other,downloads,Downloads stuck in background,1,1,2,2.000000,2,0.4,0
+27,playback.audio_quality_volume,playback,Volume adjustment not working,1,0,2,2.000000,2,0.4,0
+28,playback.battery_storage_resources,playback,App wastes data and storage,1,0,2,2.000000,2,0.4,0
+29,catalog.podcasts_audiobooks,catalog,Cannot find specific podcast,1,0,1,1.000000,1,0.4,1
+30,other.unrelated_or_unclear,other,Uninstalling over unrelated controversy,1,1,1,1.000000,1,0.4,1

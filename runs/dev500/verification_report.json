@@ -1,0 +1,23 @@
+{
+  "declared_sample_size": 20,
+  "generated_at": "2026-10-21T00:34:22.380+00:00",
+  "intent_agreement": 0.95,
+  "intent_confusion_enrich_vs_verify": {
+    "praise->unclear": 1
+  },
+  "method": "Auditor (separate prompt verify-v1) labels topic/intent/severity/sentiment from text only; code compares.",
+  "missing_verifier_output": 0,
+  "records_with_any_disagreement": 8,
+  "sentiment_mae": 0.06,
+  "severity_exact_agreement": 0.8,
+  "severity_mae": 0.2,
+  "severity_within_1": 1.0,
+  "topic_agreement": 0.8,
+  "topic_confusion_enrich_vs_verify": {
+    "billing->other": 1,
+    "billing->usability": 1,
+    "catalog->usability": 1,
+    "usability->other": 1
+  },
+  "verified": 20
+}

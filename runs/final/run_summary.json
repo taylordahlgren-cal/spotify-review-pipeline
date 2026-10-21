@@ -1,0 +1,274 @@
+{
+  "calls_by_role": {
+    "enrich": {
+      "attempts": 2743,
+      "cache_read_tokens": 9765494,
+      "cache_write_tokens": 7136,
+      "cost_usd": 5.44541,
+      "failed": 4,
+      "input_tokens": 14357639,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-sonnet-5-5"
+      ],
+      "output_tokens": 8324401,
+      "succeeded": 2739,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 4585009,
+      "unknown_cost_attempts": 0
+    },
+    "group": {
+      "attempts": 1,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 716,
+      "cost_usd": 0.003692,
+      "failed": 0,
+      "input_tokens": 16506,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "output_tokens": 4047,
+      "succeeded": 1,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 15790,
+      "unknown_cost_attempts": 0
+    },
+    "memo": {
+      "attempts": 4,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3116,
+      "cost_usd": 0.063702,
+      "failed": 2,
+      "input_tokens": 14452,
+      "models": [
+        "claude-sonnet-5-5"
+      ],
+      "output_tokens": 3324,
+      "succeeded": 2,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 11336,
+      "unknown_cost_attempts": 0
+    },
+    "verify": {
+      "attempts": 31,
+      "cache_read_tokens": 34530,
+      "cache_write_tokens": 1151,
+      "cost_usd": 0.044525,
+      "failed": 0,
+      "input_tokens": 113571,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "output_tokens": 72494,
+      "succeeded": 31,
+      "synthetic_failures": 0,
+      "uncached_input_tokens": 77890,
+      "unknown_cost_attempts": 0
+    }
+  },
+  "config": {
+    "enrich": "claude-haiku-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "enrich_fallback": "claude-sonnet-5-5:effort=low:thinking=disabled+enrich-v1+schema-v1",
+    "group": "claude-haiku-5-5:effort=low:thinking=disabled+group-v1+schema-v1",
+    "memo": "claude-sonnet-5-5:effort=low:thinking=disabled+memo-v2+schema-v1",
+    "provider": "anthropic",
+    "verify": "claude-haiku-5-5:effort=low:thinking=disabled+verify-v1+schema-v1"
+  },
+  "cost_basis": "cost_usd = usage tokens x cost/rates.csv (standard tier). Unknown-outcome attempts are listed, not priced.",
+  "generated_at": "2026-10-21T02:51:40.134+00:00",
+  "ingest": {
+    "distinct_nonempty_texts": 484189,
+    "duplicate_review_ids": [],
+    "first_review": "2022-05-17 00:01:07",
+    "ingested_at": "2026-10-21T00:36:26+00:00",
+    "input_bytes": 97400616,
+    "input_path": "spotify_reviews_18months.csv",
+    "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+    "last_review": "2023-11-15 23:16:10",
+    "nonempty_rows": 660609,
+    "profile": {
+      "duplicate_review_ids": 0,
+      "empty_review_text": 13,
+      "invalid_rating": 0,
+      "missing_app_version": 159701,
+      "missing_timestamp": 0,
+      "multiline_text": 68,
+      "non_ascii_text": 106648,
+      "records": 660622
+    },
+    "quarantine_plan": {
+      "empty_review_text": 13
+    },
+    "reviews_by_month": {
+      "2022-05": 15461,
+      "2022-06": 30338,
+      "2022-07": 32784,
+      "2022-08": 30732,
+      "2022-09": 26933,
+      "2022-10": 27572,
+      "2022-11": 27349,
+      "2022-12": 31744,
+      "2023-01": 28609,
+      "2023-02": 20889,
+      "2023-03": 27238,
+      "2023-04": 25014,
+      "2023-05": 28062,
+      "2023-06": 27117,
+      "2023-07": 85079,
+      "2023-08": 30438,
+      "2023-09": 41634,
+      "2023-10": 89104,
+      "2023-11": 34525
+    },
+    "reviews_by_rating": {
+      "1": 242620,
+      "2": 31034,
+      "3": 33268,
+      "4": 54140,
+      "5": 299560
+    },
+    "rows": 660622,
+    "rows_with_duplicated_text": 192342,
+    "scope": "sample:100000",
+    "scope_detail": {
+      "declared": "sample:100000",
+      "in_scope_distinct_texts": 78099,
+      "in_scope_rows": 100000,
+      "method": "sample:N = first N nonempty rows ordered by SHA-256(seed:review_id) as in manifest.json",
+      "rows_completable_by_exact_text_reuse": 237942,
+      "rows_outside_scope_without_matching_text": 422667
+    },
+    "text_length_chars": {
+      "max": 1693,
+      "median": 32,
+      "min": 1,
+      "p90": 207,
+      "p99": 490
+    },
+    "wall_s": 28.4
+  },
+  "pending_texts": 0,
+  "run_id": "run-a87ebe74ab",
+  "sessions": [
+    {
+      "command": "ingest enrich verify materialize group rank memo",
+      "completed_ids_end": 90049,
+      "completed_ids_start": 0,
+      "ended_at": "2026-10-21T00:38:05.738+00:00",
+      "ledger": "{\"cap_usd\": 25.0, \"spent_usd\": 0.12137, \"reserved_usd\": 0.0, \"unreconciled_usd\": 0.0}",
+      "n": 1,
+      "phase": "initial",
+      "run_id": "run-a87ebe74ab",
+      "session_id": "s01-5106a9ba",
+      "started_at": "2026-10-21T00:35:58.249+00:00",
+      "stop_reason": "interrupted_by_user",
+      "wall_s": 127.489
+    },
+    {
+      "command": "ingest enrich verify materialize group rank memo",
+      "completed_ids_end": 236894,
+      "completed_ids_start": 90049,
+      "ended_at": "2026-10-21T01:37:36.029+00:00",
+      "ledger": "{\"cap_usd\": 25.0, \"spent_usd\": 5.524588, \"reserved_usd\": 0.0, \"unreconciled_usd\": 0.0}",
+      "n": 2,
+      "phase": "resume",
+      "run_id": "run-a87ebe74ab",
+      "session_id": "s02-48be46dd",
+      "started_at": "2026-10-21T00:38:18.802+00:00",
+      "stop_reason": "finished",
+      "wall_s": 3557.234
+    },
+    {
+      "command": "memo",
+      "completed_ids_end": 236894,
+      "completed_ids_start": 236894,
+      "ended_at": "2026-10-21T02:51:40.025+00:00",
+      "ledger": "{\"cap_usd\": 25.0, \"spent_usd\": 5.557329, \"reserved_usd\": 0.0, \"unreconciled_usd\": 0.0}",
+      "n": 3,
+      "phase": "resume",
+      "run_id": "run-a87ebe74ab",
+      "session_id": "s03-350b41bb",
+      "started_at": "2026-10-21T02:51:19.270+00:00",
+      "stop_reason": "finished",
+      "wall_s": 20.756
+    }
+  ],
+  "stage_times": [
+    {
+      "detail": "{\"session\": \"s01-5106a9ba\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "ingest",
+      "started_at": "2026-10-21T00:35:58.249+00:00",
+      "wall_s": 28.578
+    },
+    {
+      "detail": "{\"session\": \"s01-5106a9ba\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "enrich",
+      "started_at": "2026-10-21T00:36:29.700+00:00",
+      "wall_s": 94.205
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "ingest",
+      "started_at": "2026-10-21T00:38:18.802+00:00",
+      "wall_s": 0.29
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "enrich",
+      "started_at": "2026-10-21T00:38:21.633+00:00",
+      "wall_s": 3278.706
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "verify",
+      "started_at": "2026-10-21T01:33:00.334+00:00",
+      "wall_s": 226.488
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "materialize",
+      "started_at": "2026-10-21T01:36:46.821+00:00",
+      "wall_s": 12.414
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "group",
+      "started_at": "2026-10-21T01:36:59.236+00:00",
+      "wall_s": 20.234
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "rank",
+      "started_at": "2026-10-21T01:37:19.474+00:00",
+      "wall_s": 3.071
+    },
+    {
+      "detail": "{\"session\": \"s02-48be46dd\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "memo",
+      "started_at": "2026-10-21T01:37:22.545+00:00",
+      "wall_s": 10.743
+    },
+    {
+      "detail": "{\"session\": \"s03-350b41bb\"}",
+      "run_id": "run-a87ebe74ab",
+      "stage": "memo",
+      "started_at": "2026-10-21T02:51:23.305+00:00",
+      "wall_s": 13.685
+    }
+  ],
+  "text_results": {
+    "completed": 77342,
+    "quarantined": 757
+  },
+  "texts_with_transport_failures": 0,
+  "total_cost_usd_from_usage": 5.557329
+}

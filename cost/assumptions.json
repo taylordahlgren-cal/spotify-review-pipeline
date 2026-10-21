@@ -1,0 +1,27 @@
+{
+  "currency": "USD",
+  "rates_tier_used": "standard (synchronous Messages API, prompts <= 100k tokens); Batch API NOT used",
+  "budget_usd": 25.0,
+  "output_token_cap_per_enrich_request": 8000,
+  "max_workers": 8,
+  "requests_per_minute_limit": 50,
+  "fallback_max_fraction": 0.005,
+  "verify_fraction": 0.02,
+  "verify_max": 2000,
+  "parallel_efficiency": 0.85,
+  "local_compute_usd_per_hour": 0.02,
+  "local_compute_note": "Laptop running the orchestrator (electricity/wear, rough assumption). Hosting for the dashboard is a separate fixed cost (free tiers used) and is not part of API spend.",
+  "conservative": {
+    "retry_rate_multiplier": 3.0,
+    "min_retry_rate": 0.05,
+    "fallback_fraction": 0.005,
+    "output_token_inflation": 1.25,
+    "verify_at_max": true
+  },
+  "scenarios": [
+    {"name": "Full corpus, no exact-text reuse", "texts_to_classify": 660609, "rows": 660622},
+    {"name": "Full corpus, exact-text reuse", "texts_to_classify": 484189, "rows": 660622},
+    {"name": "Declared scope sample:100000 (reuse)", "texts_to_classify": 78099, "rows": 660622}
+  ],
+  "fixed_overhead_note": "Group + memo calls happen once per run regardless of volume (not multiplied by reviews)."
+}

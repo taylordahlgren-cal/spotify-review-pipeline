@@ -1,0 +1,236 @@
+{
+  "baseline_disagreement_rate_unplanted": 0.2011,
+  "cases": [
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "other",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "bc6990f9-d763-4063-8a53-0fccb6cf21e8",
+      "verifier": "other"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "praise",
+      "originally_agreed": false,
+      "planted": "cancellation",
+      "review_id": "fc5ee7a8-d036-4839-bba7-4ea96fbd1948",
+      "verifier": "complaint"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "usability",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "38397d0b-3aae-4628-b014-fc121fefeca6",
+      "verifier": "usability"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "complaint",
+      "originally_agreed": true,
+      "planted": "praise",
+      "review_id": "454415a6-4d58-44f5-8dd8-599d163db4d4",
+      "verifier": "complaint"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "usability",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "000e9395-8ced-40ab-b5b4-8c37c3ae32fa",
+      "verifier": "usability"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "request",
+      "originally_agreed": true,
+      "planted": "complaint",
+      "review_id": "461fd338-1ab7-43ca-9290-3192a4748471",
+      "verifier": "request"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "other",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "5dfc6e4a-d5a9-402d-856d-15c81e88e8ba",
+      "verifier": "other"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "complaint",
+      "originally_agreed": true,
+      "planted": "praise",
+      "review_id": "3db6f80d-3876-471b-89a6-f64b1929bf64",
+      "verifier": "complaint"
+    },
+    {
+      "detected": false,
+      "field": "topic",
+      "original": "usability",
+      "originally_agreed": false,
+      "planted": "billing",
+      "review_id": "7d8f71e0-d62d-4924-b0cd-dd31a5c1f4f6",
+      "verifier": "billing"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "praise",
+      "originally_agreed": true,
+      "planted": "cancellation",
+      "review_id": "68ed95a8-9aa9-40b9-94f8-9977d59f85d8",
+      "verifier": "praise"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "playback",
+      "originally_agreed": true,
+      "planted": "support",
+      "review_id": "06c29b5c-0f1d-4f5f-8771-17afc368340c",
+      "verifier": "playback"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "complaint",
+      "originally_agreed": true,
+      "planted": "praise",
+      "review_id": "cb863580-0986-451e-9b9f-bfe21e23a8ee",
+      "verifier": "complaint"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "other",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "e89b2d8b-6494-4442-a5c7-18291bddeef5",
+      "verifier": "other"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "complaint",
+      "originally_agreed": false,
+      "planted": "praise",
+      "review_id": "5088ee2e-9785-4e48-b57d-d7b8ed1c898f",
+      "verifier": "cancellation"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "other",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "2ccbde7e-660e-4ca9-bbc5-10d135fd70ea",
+      "verifier": "other"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "praise",
+      "originally_agreed": true,
+      "planted": "cancellation",
+      "review_id": "a3f4da96-9fd4-4d1b-9f45-ad6bbce516f7",
+      "verifier": "praise"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "other",
+      "originally_agreed": false,
+      "planted": "billing",
+      "review_id": "5bcef67e-2c00-41ae-ab7a-f594a22bd2a4",
+      "verifier": "usability"
+    },
+    {
+      "detected": false,
+      "field": "intent",
+      "original": "unclear",
+      "originally_agreed": false,
+      "planted": "complaint",
+      "review_id": "d0ae9714-8c62-439b-8ded-03f5a7855e5e",
+      "verifier": "complaint"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "billing",
+      "originally_agreed": false,
+      "planted": "downloads",
+      "review_id": "ceaae6ef-1d4b-4c8d-8e44-d8e4e74f8717",
+      "verifier": "other"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "praise",
+      "originally_agreed": true,
+      "planted": "cancellation",
+      "review_id": "31f15ede-d68e-4a57-8352-9e58d6ae3276",
+      "verifier": "praise"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "catalog",
+      "originally_agreed": true,
+      "planted": "playback",
+      "review_id": "ac92e76b-1bda-45cd-b857-927bccb75f2e",
+      "verifier": "catalog"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "complaint",
+      "originally_agreed": true,
+      "planted": "praise",
+      "review_id": "e5cafce8-8e03-4dfd-a18b-0d41419645b6",
+      "verifier": "complaint"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "usability",
+      "originally_agreed": true,
+      "planted": "billing",
+      "review_id": "817d64c6-aad7-46fc-8268-2cc11aa80bae",
+      "verifier": "usability"
+    },
+    {
+      "detected": true,
+      "field": "intent",
+      "original": "unclear",
+      "originally_agreed": true,
+      "planted": "complaint",
+      "review_id": "04bbc6c7-d66a-4861-bdd4-30ca480b4ff4",
+      "verifier": "unclear"
+    },
+    {
+      "detected": true,
+      "field": "topic",
+      "original": "downloads",
+      "originally_agreed": true,
+      "planted": "access",
+      "review_id": "73b2fc6c-51d1-4041-aaa4-a9b862e3731d",
+      "verifier": "downloads"
+    }
+  ],
+  "description": "Test copy of saved enrichment labels with a deliberately wrong topic or intent planted on 25 verified records. The code comparison against the saved independent verifier labels must flag them. No model calls; the real records are unchanged.",
+  "detected_by_verifier_comparison": 23,
+  "detection_rate": 0.92,
+  "excluded_from_business_aggregates": true,
+  "planted": 25,
+  "synthetic_test": true
+}
