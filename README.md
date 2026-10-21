@@ -6,11 +6,11 @@ every number can be traced back to saved records.
 
 | | |
 |---|---|
-| **Live dashboard** | `__DASHBOARD_URL__` (free Render instance: the first load after idle can take ~30-50 s; no login) |
-| **Decision memo** | [`runs/final/outputs/memo.md`](runs/final/outputs/memo.md) |
+| **Live dashboard** | **https://spotify-review-dashboard-b4ux.onrender.com** (free Render instance: the first load after idle can take ~30-50 s; no login) |
+| **Decision memo** | [`runs/final/outputs/memo.md`](runs/final/outputs/memo.md) (read with the [human review note](runs/final/outputs/memo_human_review.md)) |
 | **Grading export** | [`grading/`](grading/) (self-check: [`evals/self_check_report.json`](evals/self_check_report.json)) |
 | **Cost calculator** | [`cost/report.md`](cost/report.md), with offline replay `python -m cost.calculator` |
-| **Interrupt/resume recording** | `__RECORDING_LINK__` |
+| **Interrupt/resume recording** | [`docs/resume_demo_pt2.mov`](docs/resume_demo_pt2.mov) (2:10): the main run starts; Ctrl-C saves in-flight batches; `status` shows session 1 `interrupted_by_user` with 1,550 texts done and 76,549 pending; the rerun prints `session 2 (resume)` with 76,549 pending and continues. [`docs/resume_demo_pt1.mov`](docs/resume_demo_pt1.mov) (1:00) shows the 100-review pilot's cold run, then the warm run with 0 new calls. |
 | **Dataset** | Course ZIP (`spotify_reviews_18months.csv`, SHA-256 `1fc85de6…2fcef6`). Place it at `data/spotify_reviews_18months.csv`; it is not committed. |
 
 ## Results at a glance
@@ -36,6 +36,16 @@ These figures come from the final run, `runs/final` (run ID in `grading/run.json
 playback controls). It is the top *specific* issue under the baseline ranking (`billing.free_tier_restrictions_paywall`, 6,975
 complaints, mean severity 2.711971, priority 18,916). Ad interruptions are the close alternative (16,481). Playback and access are
 smaller but far more severe. See the memo for claim IDs, alternatives and limitations.
+
+**Human review of the memo.** All 26 cited IDs and every number pass the automated check. One reasoning slip remains: the memo calls
+billing_support "the highest severity sum among specific areas", but by area total usability is higher (30,785 vs 23,467). The
+recommendation still holds on its stated basis, which is the issue-level baseline: free-tier restrictions are the top specific
+issue. Ads-related usability is a close runner-up, and the two overlap: both are free-tier experience. Details are in
+[memo_human_review.md](runs/final/outputs/memo_human_review.md).
+
+An earlier memo (prompt memo-v1) also passed the original checker, but it contained an invented tag `[C-none]`. The checker was
+tightened to reject any unknown bracket tag, the prompt was bumped to memo-v2, and the memo was regenerated. The v1 output is kept in
+`memo_v1_failed_bracket_check.md`.
 
 ### Why 100k and not the full corpus
 
@@ -224,7 +234,15 @@ returned praise with severity 3, which contradicts the rubric's "praise = severi
 
 ### Trace: one review from source to memo
 
-`__TRACE__`
+| Step | Saved evidence | Value |
+|---|---|---|
+| Source | `data/spotify_reviews_18months.csv` | `86151d66-9d56-43ea-8514-4a33c1646656`: "I cant choose the song that i want and only 6 skips per hour this is becoming trash" (1★, app 8.8.40.470, 2023-06-06) |
+| Hash | `grading/records.jsonl.gz` | `source_sha256` `c1d3339f…824e` (checker `row_sha`) |
+| Enrichment | `runs/final/run_log.jsonl`, request `req_011CgEWbVXDNpqJjUapmWQK4` | Haiku 5.5, session 2 (`phase=resume`), batch of 50, first pass valid. Result: billing / `free_tier_restrictions_paywall`, complaint, severity 3, sentiment -0.8, entities `["skips"]`, quote = the full text (exact substring) |
+| Verification | `runs/final/verification_disagreements.csv` | not among the 443 verifier disagreements |
+| Issue membership | `runs/final/outputs/membership.csv` | `billing.free_tier_restrictions_paywall`, named "Free tier limits and paywalled features" by the grouping agent |
+| Ranking | `runs/final/outputs/ranking.csv` | rank 2: complaint_count 6,975; severity_sum 18,916; mean 2.711971; priority 18,916 |
+| Memo claim | `runs/final/outputs/memo.md`, `grading/claims.csv` | "Free-tier restrictions rank 2 overall with 6975 complaints [C05] and a priority score of 18916 [C08]", citing this review ID as evidence. C05 and C08 match the checker's recomputation. |
 
 ## Cost and runtime (T3)
 
